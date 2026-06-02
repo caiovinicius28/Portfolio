@@ -70,6 +70,9 @@ h1{font-size:clamp(43px,5.4vw,88px);line-height:.96;letter-spacing:-.055em;text-
 }
 
 @media(max-width:780px){
+  html,body{width:100%;max-width:100%;overflow-x:clip}
+  body{position:relative}
+  main,.section,.site-header,.footer{max-width:100vw;overflow-x:clip}
   .site-header{padding:16px 22px}
   .brand img{width:108px}
   .brand h2{font-size:14px}
@@ -77,11 +80,12 @@ h1{font-size:clamp(43px,5.4vw,88px);line-height:.96;letter-spacing:-.055em;text-
   .nav-menu a{padding:13px 12px;border-radius:10px}
   .nav-menu a:hover{background:rgba(0,183,255,.08)}
   .hero{min-height:auto;padding-top:122px;padding-bottom:52px}
+  .hero,.about-panel,.services,.portfolio,.process,.contact{overflow:hidden}
   h1{font-size:clamp(38px,11.8vw,52px);line-height:1}
   .eyebrow{margin-bottom:28px}
   .hero p{font-size:16px;line-height:1.65;margin:24px 0 27px}
-  .robot-hand{width:min(620px,108%);right:-28%;top:25px}
-  .v-outline{width:min(1040px,220vw);right:-44vw;top:42%;opacity:.055}
+  .robot-hand{width:min(560px,112%);right:-24%;top:25px}
+  .v-outline{width:145vw;max-width:none;right:-70vw;top:38%;opacity:.05}
   .service-grid,.portfolio-track,.timeline,.contact-panel,.footer{grid-template-columns:1fr}
   .work-card.featured{grid-column:auto}
   .glass-panel{padding:34px 24px}
@@ -92,6 +96,7 @@ h1{font-size:clamp(43px,5.4vw,88px);line-height:.96;letter-spacing:-.055em;text-
 }
 
 @media(max-width:560px){
+  .noise,.page-orb{max-width:100vw;overflow:hidden}
   .page-orb-a{width:360px;height:360px;right:-190px}
   .page-orb-b{width:330px;height:330px;left:-210px}
   .section{padding-left:18px;padding-right:18px}
@@ -103,8 +108,8 @@ h1{font-size:clamp(43px,5.4vw,88px);line-height:.96;letter-spacing:-.055em;text-
   .hero-actions{gap:12px}
   .btn{width:100%;padding:16px 18px}
   .hero-visual{height:292px;margin-top:4px}
-  .robot-hand{right:-42%;width:124%;top:28px}
-  .v-outline{width:780px;right:-350px;top:38%}
+  .robot-hand{right:-30%;width:116%;top:28px}
+  .v-outline{width:150vw;right:-76vw;top:36%}
   .trusted{font-size:11px;line-height:1.55}
   .about-copy h2,.section-heading h2,.portfolio-copy h2,.contact h2{font-size:clamp(30px,9.5vw,38px);letter-spacing:-.035em}
   .about-panel,.services,.portfolio,.process,.contact{padding-top:44px;padding-bottom:50px}
@@ -120,8 +125,8 @@ h1{font-size:clamp(43px,5.4vw,88px);line-height:.96;letter-spacing:-.055em;text-
 @media(max-width:380px){
   h1{font-size:36px}
   .hero-visual{height:250px}
-  .robot-hand{right:-52%;width:132%}
-  .v-outline{width:680px;right:-330px}
+  .robot-hand{right:-34%;width:122%}
+  .v-outline{width:155vw;right:-80vw}
   .phone{font-size:18px}
   .footer nav{gap:14px}
 }
