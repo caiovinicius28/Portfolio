@@ -3,7 +3,7 @@
   --text:#f3f7fb;--muted:#a9b4c4;--muted2:#6f7c8d;--blue:#00b7ff;--blue2:#0bd3ff;
   --line:rgba(255,255,255,.10);--line-blue:rgba(0,183,255,.45);--shadow:0 28px 90px rgba(0,0,0,.55);
 }
-*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}body{font-family:Inter,Arial,sans-serif;background:var(--bg);color:var(--text);overflow-x:hidden}a{text-decoration:none;color:inherit}img{max-width:100%;display:block}
+*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth;overflow-x:hidden}body{font-family:Inter,Arial,sans-serif;background:var(--bg);color:var(--text);overflow-x:hidden}a{text-decoration:none;color:inherit}img{max-width:100%;display:block}
 .noise{position:fixed;inset:0;pointer-events:none;opacity:.035;z-index:2;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='1'/%3E%3C/svg%3E")}.page-orb{position:fixed;border-radius:50%;filter:blur(70px);pointer-events:none;z-index:-3}.page-orb-a{width:520px;height:520px;right:-150px;top:-130px;background:rgba(0,183,255,.25)}.page-orb-b{width:480px;height:480px;left:-200px;bottom:15%;background:rgba(5,77,128,.24)}
 body:before{content:"";position:fixed;inset:0;z-index:-4;background:radial-gradient(circle at 76% 10%,rgba(12,167,255,.23),transparent 28%),radial-gradient(circle at 72% 55%,rgba(0,183,255,.13),transparent 25%),linear-gradient(125deg,#03070c 0%,#04090f 45%,#061725 100%)}
 .site-header{position:fixed;top:0;left:0;right:0;z-index:50;display:flex;align-items:center;justify-content:space-between;padding:26px 5.8%;transition:.3s;background:rgba(3,7,12,.35);backdrop-filter:blur(12px);border-bottom:1px solid transparent}.site-header.scrolled{background:rgba(3,7,12,.86);border-color:var(--line)}.brand img{width:148px}.nav-menu{display:flex;gap:35px;align-items:center}.nav-menu a{font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:.06em;color:#d7dce5;opacity:.9}.nav-menu a:hover{color:var(--blue)}.header-cta,.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;border-radius:9px;font-weight:800;text-transform:uppercase;letter-spacing:.04em;transition:.25s}.header-cta{font-size:12px;padding:13px 19px;border:1px solid var(--line-blue);color:#f7fbff}.header-cta:hover,.btn-outline:hover,.btn-ghost:hover{background:rgba(0,183,255,.11);box-shadow:0 0 32px rgba(0,183,255,.12)}.menu-toggle{display:none;background:none;border:0;width:44px;height:38px}.menu-toggle span{display:block;height:2px;background:#fff;margin:7px 0}
@@ -34,3 +34,94 @@ h1{font-size:clamp(43px,5.4vw,88px);line-height:.96;letter-spacing:-.055em;text-
 @media(max-width:1100px){.nav-menu{gap:18px}.hero{grid-template-columns:1fr;padding-top:140px}.hero-visual{position:relative;right:auto;top:auto;width:100%;height:430px;grid-row:2}.robot-hand{right:-12%;top:10px;width:86%}.chrome-shape-hero{display:none}.trusted{position:relative;left:auto;right:auto;bottom:auto;grid-row:3}.service-grid,.portfolio,.timeline,.contact-panel,.footer{grid-template-columns:1fr 1fr}.portfolio-track{grid-template-columns:1fr}.work-card.featured{transform:none}.timeline:before{display:none}.glass-panel{grid-template-columns:1fr;padding:45px 30px}.about-symbol{min-height:260px}.contact-panel{grid-template-columns:1fr}.contact-panel>img{width:280px}.footer p{text-align:left}}
 @media(max-width:780px){.site-header{padding:18px 22px}.brand img{width:132px}.header-cta{display:none}.menu-toggle{display:block}.nav-menu{position:fixed;top:73px;left:18px;right:18px;display:none;flex-direction:column;padding:22px;background:rgba(4,10,17,.96);border:1px solid var(--line);border-radius:16px}.nav-menu.open{display:flex}.hero{padding:125px 22px 55px}.section{padding-left:22px;padding-right:22px}h1{font-size:48px}.hero p{font-size:16px}.hero-visual{height:340px}.robot-hand{width:104%;right:-36%;top:25px}.v-outline{font-size:420px;right:-4%;top:4%}.service-grid,.portfolio-track,.timeline,.contact-panel,.footer{grid-template-columns:1fr}.portfolio{grid-template-columns:1fr}.glass-panel{border-radius:20px}.service-card{text-align:left}.footer nav{justify-content:flex-start;flex-wrap:wrap}.phone{font-size:20px}}
 @media(max-width:440px){h1{font-size:42px}.btn{width:100%;padding:16px 18px}.hero-actions{gap:12px}.hero-visual{height:275px}.robot-hand{right:-47%;width:120%}.about-copy h2,.section-heading h2,.portfolio-copy h2,.contact h2{font-size:31px}.contact-panel{padding:30px 22px}.contact-panel>img{width:240px}.portfolio-copy .btn{width:100%}}
+
+/* Responsive refinement layer */
+.site-header{gap:22px}#logotopper{gap:12px}.brand{flex:0 0 auto}.brand h2{font-size:clamp(14px,1.35vw,22px);line-height:1;text-transform:uppercase;letter-spacing:.04em;white-space:nowrap}.header-cta{flex:0 0 auto}.hero{grid-template-columns:minmax(0,1fr) minmax(0,1.25fr)}.service-card h3,.phone{overflow-wrap:anywhere}.contact-panel{grid-template-columns:minmax(210px,300px) minmax(0,1fr) minmax(250px,330px)}
+
+@media(max-width:1240px){
+  .site-header{gap:16px}
+  .brand img{width:126px}
+  .nav-menu{gap:20px}
+  .header-cta{padding:12px 15px}
+  .contact-panel{gap:28px}
+}
+
+@media(max-width:1100px){
+  .hero{grid-template-columns:1fr;padding-bottom:58px}
+  .hero-content{max-width:720px}
+  .hero-visual{overflow:hidden}
+  .robot-hand{width:min(760px,86%)}
+  .portfolio{grid-template-columns:1fr;gap:34px}
+  .portfolio-copy{max-width:650px}
+  .portfolio-track{grid-template-columns:repeat(3,1fr)}
+  .service-grid,.timeline,.footer{grid-template-columns:1fr 1fr}
+  .contact-panel{grid-template-columns:1fr;gap:22px}
+}
+
+@media(max-width:900px){
+  .header-cta{display:none}
+  .brand h2{font-size:16px}
+  .service-grid,.portfolio-track{grid-template-columns:1fr 1fr}
+  .work-card.featured{grid-column:span 2}
+  .timeline{gap:20px}
+  .footer{grid-template-columns:1fr}
+  .footer nav{justify-content:flex-start;flex-wrap:wrap}
+  .footer p{text-align:left}
+}
+
+@media(max-width:780px){
+  .site-header{padding:16px 22px}
+  .brand img{width:108px}
+  .brand h2{font-size:14px}
+  .nav-menu{top:70px;left:18px;right:18px;align-items:stretch;gap:8px;padding:14px;box-shadow:0 20px 70px rgba(0,0,0,.45)}
+  .nav-menu a{padding:13px 12px;border-radius:10px}
+  .nav-menu a:hover{background:rgba(0,183,255,.08)}
+  .hero{min-height:auto;padding-top:122px;padding-bottom:52px}
+  h1{font-size:clamp(38px,11.8vw,52px);line-height:1}
+  .eyebrow{margin-bottom:28px}
+  .hero p{font-size:16px;line-height:1.65;margin:24px 0 27px}
+  .robot-hand{width:min(620px,108%);right:-28%;top:25px}
+  .v-outline{width:min(1040px,220vw);right:-44vw;top:42%;opacity:.055}
+  .service-grid,.portfolio-track,.timeline,.contact-panel,.footer{grid-template-columns:1fr}
+  .work-card.featured{grid-column:auto}
+  .glass-panel{padding:34px 24px}
+  .about-symbol{min-height:230px}
+  .digital-grid{right:-170px;width:620px}
+  .service-card{min-height:auto}
+  .contact-action{align-items:stretch}
+}
+
+@media(max-width:560px){
+  .page-orb-a{width:360px;height:360px;right:-190px}
+  .page-orb-b{width:330px;height:330px;left:-210px}
+  .section{padding-left:18px;padding-right:18px}
+  .site-header{padding:14px 18px}
+  .brand img{width:92px}
+  .brand h2{display:none}
+  .nav-menu{top:62px;left:14px;right:14px}
+  .hero{padding:106px 18px 42px}
+  .hero-actions{gap:12px}
+  .btn{width:100%;padding:16px 18px}
+  .hero-visual{height:292px;margin-top:4px}
+  .robot-hand{right:-42%;width:124%;top:28px}
+  .v-outline{width:780px;right:-350px;top:38%}
+  .trusted{font-size:11px;line-height:1.55}
+  .about-copy h2,.section-heading h2,.portfolio-copy h2,.contact h2{font-size:clamp(30px,9.5vw,38px);letter-spacing:-.035em}
+  .about-panel,.services,.portfolio,.process,.contact{padding-top:44px;padding-bottom:50px}
+  .service-grid,.portfolio-track,.timeline{gap:16px}
+  .service-card{padding:28px 22px}
+  .contact-panel{padding:28px 20px;border-radius:18px;text-align:left}
+  .contact-panel>img{width:min(240px,82vw);margin-inline:auto}
+  .portfolio-copy .btn{width:100%}
+  .footer{padding-left:18px;padding-right:18px}
+  .footer img{width:132px}
+}
+
+@media(max-width:380px){
+  h1{font-size:36px}
+  .hero-visual{height:250px}
+  .robot-hand{right:-52%;width:132%}
+  .v-outline{width:680px;right:-330px}
+  .phone{font-size:18px}
+  .footer nav{gap:14px}
+}
