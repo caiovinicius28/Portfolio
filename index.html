@@ -21,45 +21,50 @@
       <h2>VYZION SYSTEMS</h2>
     </a>
 
-    <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false">
+    <button class="menu-toggle" type="button" data-i18n-aria="menu.toggle" aria-expanded="false">
       <span></span><span></span><span></span>
     </button>
 
-    <nav class="nav-menu" aria-label="Navegação principal">
-      <a href="#home">Início</a>
-      <a href="#about">Sobre</a>
-      <a href="#services">Serviços</a>
-      <a href="#portfolio">Portfólio</a>
-      <a href="#process">Processo</a>
-      <a href="#contact">Contato</a>
+    <nav class="nav-menu" data-i18n-aria="nav.main" aria-label="Navegação principal">
+      <a href="#home" data-i18n="nav.home">Início</a>
+      <a href="#about" data-i18n="nav.about">Sobre</a>
+      <a href="#services" data-i18n="nav.services">Serviços</a>
+      <a href="#portfolio" data-i18n="nav.portfolio">Portfólio</a>
+      <a href="#process" data-i18n="nav.process">Processo</a>
+      <a href="#contact" data-i18n="nav.contact">Contato</a>
     </nav>
 
-    <a class="header-cta" href="https://wa.me/5562994800483" target="_blank" rel="noopener">
-      Falar com especialista <span>↗</span>
-    </a>
+    <div class="header-actions">
+      <div class="language-switcher" aria-label="Language switcher">
+        <button class="lang-btn" type="button" data-lang="pt" aria-label="Português">PT</button>
+        <button class="lang-btn" type="button" data-lang="en" aria-label="English">EN</button>
+      </div>
+      <a class="header-cta" href="https://wa.me/5562994800483" target="_blank" rel="noopener">
+        <span data-i18n="header.cta">Falar com especialista</span> <span>↗</span>
+      </a>
+    </div>
   </header>
 
   <main>
-<img class="v-outline" src="assets/logo1.png" alt="V">
+    <img class="v-outline" src="assets/logo1.png" alt="V">
     <section class="hero section" id="home">
       <div class="hero-content reveal">
-        <div class="eyebrow">Tecnologia. Design. Resultados.</div>
-        <h1>Transformamos ideias em <strong>experiências digitais.</strong></h1>
-        <p>Sites e landing pages de alta performance que elevam sua marca e geram resultados reais.</p>
+        <div class="eyebrow" data-i18n="hero.eyebrow">Tecnologia. Design. Resultados.</div>
+        <h1><span data-i18n="hero.title">Transformamos ideias em</span> <strong><span data-i18n="hero.titleEmphasis">experiências digitais.</span></strong></h1>
+        <p data-i18n="hero.subtitle">Sites e landing pages de alta performance que elevam sua marca e geram resultados reais.</p>
         <div class="hero-actions">
-          <a class="btn btn-primary" href="#contact">Quero saber mais <span>↗</span></a>
-          <a class="btn btn-ghost" href="#portfolio"><span class="play">▶</span> Ver projetos</a>
+          <a class="btn btn-primary" href="#contact"><span data-i18n="hero.cta1">Quero saber mais</span> <span>↗</span></a>
+          <a class="btn btn-ghost" href="#portfolio"><span class="play">▶</span> <span data-i18n="hero.cta2">Ver projetos</span></a>
         </div>
       </div>
 
       <div class="hero-visual reveal delay-1">
-        <!--<div class="v-outline">V</div>-->
-        <img class="robot-hand" src="assets/robothand1.png" alt="Mão robótica futurista" />
-        <img class="chrome-shape chrome-shape-hero" src="assets/crome.png" alt="Elemento cromado abstrato" />
+        <img class="robot-hand" src="assets/robothand1.png" data-i18n-alt="hero.imageAlt" alt="Mão robótica futurista" />
+        <img class="chrome-shape chrome-shape-hero" src="assets/crome.png" data-i18n-alt="hero.chromeAlt" alt="Elemento cromado abstrato" />
       </div>
 
       <div class="trusted reveal delay-2">
-        <span>Design estratégico para negócios que querem presença digital de verdade</span>
+        <span data-i18n="hero.trusted">Design estratégico para negócios que querem presença digital de verdade</span>
         <div class="trusted-line"></div>
       </div>
     </section>
@@ -67,15 +72,15 @@
     <section class="about-panel section" id="about">
       <div class="glass-panel reveal">
         <div class="about-copy">
-          <div class="eyebrow small">Sobre nós</div>
-          <h2>Tecnologia e criatividade a serviço do seu <strong>sucesso.</strong></h2>
-          <p>A Vyzion Systems nasceu para unir design estratégico, tecnologia e performance em soluções digitais que impulsionam negócios no mundo online.</p>
-          <p>Cada projeto é feito sob medida para transmitir credibilidade, engajar visitantes e gerar resultados.</p>
-          <a class="btn btn-outline" href="#services">Conheça nossas soluções <span>↗</span></a>
+          <div class="eyebrow small" data-i18n="about.eyebrow">Sobre nós</div>
+          <h2><span data-i18n="about.title">Tecnologia e criatividade a serviço do seu</span> <strong><span data-i18n="about.titleEmphasis">sucesso.</span></strong></h2>
+          <p data-i18n="about.p1">A Vyzion Systems nasceu para unir design estratégico, tecnologia e performance em soluções digitais que impulsionam negócios no mundo online.</p>
+          <p data-i18n="about.p2">Cada projeto é feito sob medida para transmitir credibilidade, engajar visitantes e gerar resultados.</p>
+          <a class="btn btn-outline" href="#services"><span data-i18n="about.cta">Conheça nossas soluções</span> <span>↗</span></a>
         </div>
         <div class="about-symbol">
-          <img class="symbol-overlay" src="./assets/logo1.png" alt="Símbolo Vyzion" width="600px"/>
-          <img class="chrome-emblem" src="assets/crome.png" alt="Elemento cromado abstrato" />
+          <img class="symbol-overlay" src="./assets/logo1.png" data-i18n-alt="about.symbolAlt" alt="Símbolo Vyzion" width="600px"/>
+          <img class="chrome-emblem" src="assets/crome.png" data-i18n-alt="about.chromeAlt" alt="Elemento cromado abstrato" />
           <div class="digital-grid"></div>
         </div>
       </div>
@@ -83,83 +88,83 @@
 
     <section class="services section" id="services">
       <div class="section-heading reveal">
-        <div class="eyebrow center">O que fazemos</div>
-        <h2>Soluções digitais que colocam sua empresa em outro nível.</h2>
+        <div class="eyebrow center" data-i18n="services.eyebrow">O que fazemos</div>
+        <h2 data-i18n="services.title">Soluções digitais que colocam sua empresa em outro nível.</h2>
       </div>
 
       <div class="service-grid">
         <article class="service-card reveal">
           <div class="service-icon">▱</div>
-          <h3>Sites Institucionais</h3>
-          <p>Sites profissionais que comunicam autoridade, fortalecem sua marca e criam confiança.</p>
+          <h3 data-i18n="service.1.title">Sites Institucionais</h3>
+          <p data-i18n="service.1.text">Sites profissionais que comunicam autoridade, fortalecem sua marca e criam confiança.</p>
         </article>
         <article class="service-card reveal delay-1">
           <div class="service-icon">▤</div>
-          <h3>Landing Pages</h3>
-          <p>Páginas estratégicas para campanhas, captação de leads e conversão de visitantes.</p>
+          <h3 data-i18n="service.2.title">Landing Pages</h3>
+          <p data-i18n="service.2.text">Páginas estratégicas para campanhas, captação de leads e conversão de visitantes.</p>
         </article>
         <article class="service-card reveal delay-2">
           <div class="service-icon">ϟ</div>
-          <h3>Alta Performance</h3>
-          <p>Projetos rápidos, responsivos, otimizados e preparados para uma experiência fluida.</p>
+          <h3 data-i18n="service.3.title">Alta Performance</h3>
+          <p data-i18n="service.3.text">Projetos rápidos, responsivos, otimizados e preparados para uma experiência fluida.</p>
         </article>
         <article class="service-card reveal delay-3">
           <div class="service-icon">&lt;/&gt;</div>
-          <h3>Desenvolvimento Personalizado</h3>
-          <p>Soluções sob medida para atender necessidades específicas do seu negócio.</p>
+          <h3 data-i18n="service.4.title">Desenvolvimento Personalizado</h3>
+          <p data-i18n="service.4.text">Soluções sob medida para atender necessidades específicas do seu negócio.</p>
         </article>
       </div>
     </section>
 
     <section class="portfolio section" id="portfolio">
       <div class="portfolio-copy reveal">
-        <div class="eyebrow small">Portfólio</div>
-        <h2>Projetos que geram <strong>resultados reais.</strong></h2>
-        <p>Layouts modernos, páginas persuasivas e experiências digitais desenhadas para converter.</p>
-        <a class="btn btn-outline" href="#contact">Solicitar um projeto <span>↗</span></a>
+        <div class="eyebrow small" data-i18n="portfolio.eyebrow">Portfólio</div>
+        <h2><span data-i18n="portfolio.title">Projetos que geram</span> <strong><span data-i18n="portfolio.titleEmphasis">resultados reais.</span></strong></h2>
+        <p data-i18n="portfolio.text">Layouts modernos, páginas persuasivas e experiências digitais desenhadas para converter.</p>
+        <a class="btn btn-outline" href="#contact"><span data-i18n="portfolio.cta">Solicitar um projeto</span> <span>↗</span></a>
       </div>
       <div class="portfolio-track reveal delay-1">
         <article class="work-card">
-          <img src="assets/banner1.jpeg" alt="Projeto de landing page Vyzion" />
-          <h3>Presença Digital</h3>
-          <p>Landing Page</p>
+          <img src="assets/banner1.jpeg" data-i18n-alt="portfolio.item1Alt" alt="Projeto de landing page Vyzion" />
+          <h3 data-i18n="portfolio.project1.title">Presença Digital</h3>
+          <p data-i18n="portfolio.project1.type">Landing Page</p>
         </article>
         <article class="work-card featured">
-          <img src="assets/banner2.png" alt="Projeto web Vyzion" />
-          <h3>Vyzion Experience</h3>
-          <p>Site Institucional</p>
+          <img src="assets/banner2.png" data-i18n-alt="portfolio.item2Alt" alt="Projeto web Vyzion" />
+          <h3 data-i18n="portfolio.project2.title">Vyzion Experience</h3>
+          <p data-i18n="portfolio.project2.type">Site Institucional</p>
         </article>
         <article class="work-card">
-          <img src="assets/vyzion_1.jpg" alt="Identidade Vyzion Systems" />
-          <h3>Marca Digital</h3>
-          <p>Identidade Web</p>
+          <img src="assets/vyzion_1.jpg" data-i18n-alt="portfolio.item3Alt" alt="Identidade Vyzion Systems" />
+          <h3 data-i18n="portfolio.project3.title">Marca Digital</h3>
+          <p data-i18n="portfolio.project3.type">Identidade Web</p>
         </article>
       </div>
     </section>
 
     <section class="process section" id="process">
       <div class="section-heading reveal">
-        <div class="eyebrow center">Nosso processo</div>
+        <div class="eyebrow center" data-i18n="process.eyebrow">Nosso processo</div>
       </div>
       <div class="timeline">
-        <article class="step reveal"><span>01</span><h3>Descobrir</h3><p>Entendemos seu negócio, objetivos e público-alvo.</p></article>
-        <article class="step reveal delay-1"><span>02</span><h3>Planejar</h3><p>Criamos estratégia, estrutura e roteiro do projeto.</p></article>
-        <article class="step reveal delay-2"><span>03</span><h3>Design & UX</h3><p>Desenvolvemos o design focado em experiência e conversão.</p></article>
-        <article class="step reveal delay-3"><span>04</span><h3>Desenvolver</h3><p>Transformamos o projeto em um site rápido e responsivo.</p></article>
-        <article class="step reveal delay-4"><span>05</span><h3>Entregar</h3><p>Testamos, otimizamos e entregamos com excelência.</p></article>
+        <article class="step reveal"><span>01</span><h3 data-i18n="process.step1.title">Descobrir</h3><p data-i18n="process.step1.text">Entendemos seu negócio, objetivos e público-alvo.</p></article>
+        <article class="step reveal delay-1"><span>02</span><h3 data-i18n="process.step2.title">Planejar</h3><p data-i18n="process.step2.text">Criamos estratégia, estrutura e roteiro do projeto.</p></article>
+        <article class="step reveal delay-2"><span>03</span><h3 data-i18n="process.step3.title">Design & UX</h3><p data-i18n="process.step3.text">Desenvolvemos o design focado em experiência e conversão.</p></article>
+        <article class="step reveal delay-3"><span>04</span><h3 data-i18n="process.step4.title">Desenvolver</h3><p data-i18n="process.step4.text">Transformamos o projeto em um site rápido e responsivo.</p></article>
+        <article class="step reveal delay-4"><span>05</span><h3 data-i18n="process.step5.title">Entregar</h3><p data-i18n="process.step5.text">Testamos, otimizamos e entregamos com excelência.</p></article>
       </div>
     </section>
 
     <section class="contact section" id="contact">
       <div class="contact-panel reveal">
-        <img src="assets/silerlogo1.png" alt="Mão robótica" />
+        <img src="assets/silerlogo1.png" data-i18n-alt="contact.imageAlt" alt="Mão robótica" />
         <div class="contact-copy">
-          <h2>Vamos conversar sobre o seu <strong>próximo projeto?</strong></h2>
-          <p>Fale com nossos especialistas e descubra como podemos elevar sua presença digital.</p>
+          <h2><span data-i18n="contact.title">Vamos conversar sobre o seu</span> <strong><span data-i18n="contact.titleEmphasis">próximo projeto?</span></strong></h2>
+          <p data-i18n="contact.text">Fale com nossos especialistas e descubra como podemos elevar sua presença digital.</p>
         </div>
         <div class="contact-action">
-          <a class="phone" href="https://wa.me/5562994800483" target="_blank" rel="noopener">+55 (62) 99480-0483</a>
-          <a class="btn btn-outline" href="https://wa.me/5562994800483" target="_blank" rel="noopener">Falar com especialista <span>↗</span></a>
+          <a class="phone" href="https://wa.me/5562994800483" target="_blank" rel="noopener" data-i18n="contact.phone">+55 (62) 99480-0483</a>
+          <a class="btn btn-outline" href="https://wa.me/5562994800483" target="_blank" rel="noopener"><span data-i18n="contact.cta">Falar com especialista</span> <span>↗</span></a>
         </div>
       </div>
     </section>
@@ -168,9 +173,9 @@
   <footer class="footer">
     <img src="assets/logo1.png" alt="Vyzion Systems" />
     <nav>
-      <a href="#home">Início</a><a href="#about">Sobre</a><a href="#services">Serviços</a><a href="#portfolio">Portfólio</a><a href="#contact">Contato</a>
+      <a href="#home" data-i18n="nav.home">Início</a><a href="#about" data-i18n="nav.about">Sobre</a><a href="#services" data-i18n="nav.services">Serviços</a><a href="#portfolio" data-i18n="nav.portfolio">Portfólio</a><a href="#contact" data-i18n="nav.contact">Contato</a>
     </nav>
-    <p>© 2026 Vyzion Systems. Todos os direitos reservados.</p>
+    <p data-i18n="footer.rights">© 2026 Vyzion Systems. Todos os direitos reservados.</p>
   </footer>
 
   <script src="js/script.js"></script>
