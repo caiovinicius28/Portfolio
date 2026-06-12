@@ -24,11 +24,15 @@ const translations = {
     'hero.title': 'Transformamos ideias em',
     'hero.titleEmphasis': 'experiências digitais.',
     'hero.subtitle': 'Sites e landing pages de alta performance que elevam sua marca e geram resultados reais.',
-    'hero.cta1': 'Quero saber mais',
+    'hero.cta1': 'Conheça nossas soluções',
     'hero.cta2': 'Ver projetos',
     'hero.imageAlt': 'Mão robótica futurista',
     'hero.chromeAlt': 'Elemento cromado abstrato',
-    'hero.trusted': 'Design estratégico para negócios que querem presença digital de verdade',
+    'hero.trusted': 'Soluções digitais criadas para gerar presença, performance e crescimento.',
+    'hero.trust1': 'Estratégia',
+    'hero.trust2': 'Design',
+    'hero.trust3': 'Tecnologia',
+    'hero.trust4': 'Resultados',
     'about.eyebrow': 'Sobre nós',
     'about.title': 'Tecnologia e criatividade a serviço do seu',
     'about.titleEmphasis': 'sucesso.',
@@ -96,11 +100,15 @@ const translations = {
     'hero.title': 'We turn ideas into',
     'hero.titleEmphasis': 'digital experiences.',
     'hero.subtitle': 'High-performance websites and landing pages that elevate your brand and drive real results.',
-    'hero.cta1': 'I want to learn more',
+    'hero.cta1': 'Discover our solutions',
     'hero.cta2': 'See projects',
     'hero.imageAlt': 'Futuristic robotic hand',
     'hero.chromeAlt': 'Abstract chrome element',
-    'hero.trusted': 'Strategic design for businesses that want a real digital presence',
+    'hero.trusted': 'Digital solutions built to create presence, performance and growth.',
+    'hero.trust1': 'Strategy',
+    'hero.trust2': 'Design',
+    'hero.trust3': 'Technology',
+    'hero.trust4': 'Results',
     'about.eyebrow': 'About us',
     'about.title': 'Technology and creativity at the service of your',
     'about.titleEmphasis': 'success.',
@@ -242,5 +250,40 @@ const observer = new IntersectionObserver((entries) => {
 }, { threshold: 0.15 });
 
 document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+const canUsePointerEffects = window.matchMedia('(hover: hover) and (pointer: fine)').matches
+  && !window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+if (canUsePointerEffects) {
+  const pointerSurfaces = document.querySelectorAll('.hero-trust, .service-card, .step, .contact-panel');
+
+  pointerSurfaces.forEach(surface => {
+    surface.addEventListener('pointermove', event => {
+      const bounds = surface.getBoundingClientRect();
+      const x = event.clientX - bounds.left;
+      const y = event.clientY - bounds.top;
+      const xRatio = x / bounds.width;
+      const yRatio = y / bounds.height;
+
+      surface.style.setProperty('--pointer-x', `${x}px`);
+      surface.style.setProperty('--pointer-y', `${y}px`);
+      surface.style.setProperty('--tilt-x', `${(0.5 - yRatio) * 4}deg`);
+      surface.style.setProperty('--tilt-y', `${(xRatio - 0.5) * 4}deg`);
+    });
+
+    surface.addEventListener('pointerleave', () => {
+      surface.style.setProperty('--pointer-x', '50%');
+      surface.style.setProperty('--pointer-y', '50%');
+      surface.style.setProperty('--tilt-x', '0deg');
+      surface.style.setProperty('--tilt-y', '0deg');
+    });
+  });
+
+  const footer = document.querySelector('.footer');
+  footer?.addEventListener('pointermove', event => {
+    const bounds = footer.getBoundingClientRect();
+    footer.style.setProperty('--footer-x', `${event.clientX - bounds.left}px`);
+  });
+}
 
 applyTranslation(getInitialLanguage());
