@@ -1,0 +1,18 @@
+{
+  "name": "Vyzion Systems",
+  "short_name": "Vyzion",
+  "description": "Premium websites, landing pages and custom software built to convert, rank and scale.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#03070c",
+  "theme_color": "#03070c",
+  "lang": "en",
+  "icons": [
+    {
+      "src": "public%20/images/logos/logo1.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}

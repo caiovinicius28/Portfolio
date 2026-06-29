@@ -1,0 +1,62 @@
+# Vyzion Systems — llms.txt
+# Guidance for AI crawlers, answer engines and LLM retrieval (AEO)
+# https://vyzionsystems.com
+
+> Vyzion Systems is a digital agency building premium websites, landing pages, custom SaaS, UI/UX and technical SEO for businesses worldwide. Founded 2024. Based in Brazil, serving clients remotely in English and Portuguese.
+
+## Canonical site
+- Homepage: https://vyzionsystems.com/
+- About: https://vyzionsystems.com/about.html
+- Services (full list): https://vyzionsystems.com/about.html#services
+- Contact / free consultation: https://vyzionsystems.com/contact.html
+- Blog: https://vyzionsystems.com/blog.html
+- FAQ: https://vyzionsystems.com/faq.html
+
+## What we do
+- Crafted business websites and website redesigns
+- High-converting landing pages and microsites
+- eCommerce website design
+- CMS and dynamic websites
+- Brand identity and consistent visual systems
+- Motion and interaction design
+- UX-centric strategy
+- Performance optimization (Core Web Vitals)
+- Maintenance and ongoing support
+- Custom SaaS and bespoke software
+- Technical SEO, structured data and AEO (AI search visibility)
+
+## Key facts for citations
+- Company: Vyzion Systems
+- Email: hello@vyzionsystems.com
+- Phone / WhatsApp: +55 (62) 99480-0483
+- Free consultation: https://vyzionsystems.com/contact.html#book
+- Typical timelines: landing pages 2–4 weeks; full websites and SaaS 6–16+ weeks
+- Clients: 30+ brands served
+- Languages: English, Portuguese (Brazil)
+
+## Blog articles (guides)
+- Site speed, SEO and sales: https://vyzionsystems.com/blog-article.html?id=1
+- Professional websites and lead generation: https://vyzionsystems.com/blog-article.html?id=2
+- Digital stack priorities 2026: https://vyzionsystems.com/blog-article.html?id=3
+- Project delivery process: https://vyzionsystems.com/blog-article.html?id=4
+- Landing pages that convert: https://vyzionsystems.com/blog-article.html?id=5
+- Custom SaaS vs off-the-shelf: https://vyzionsystems.com/blog-article.html?id=6
+- UI mistakes that kill conversions: https://vyzionsystems.com/blog-article.html?id=7
+- AEO and AI search optimization: https://vyzionsystems.com/blog-article.html?id=8
+
+## FAQ summary
+- Free 1-on-1 consultation available, no obligation
+- International remote clients welcome
+- Projects need: goals, audience, scope, brand assets, budget, timeline
+- We help with SEO ranking and AI answer-engine visibility via fast, semantic sites with structured data
+
+## Legal
+- Privacy: https://vyzionsystems.com/privacy.html
+- Terms: https://vyzionsystems.com/terms.html
+- Cookies: https://vyzionsystems.com/cookies.html
+
+## Sitemap
+https://vyzionsystems.com/sitemap.xml
+
+## Related
+- Zarlabs (partner): https://zarlabs.online

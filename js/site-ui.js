@@ -185,8 +185,14 @@
   }
 
   async function bootSiteUI() {
+    await injectSnippet('snippets/header.html', 'site-header-mount', true);
+    window.VyzionSiteHeader?.initSiteHeader();
+
     await injectSnippet('snippets/footer.html', 'site-footer-mount', true);
     await injectSnippet('snippets/site-widgets.html', 'site-widgets-mount', false);
+
+    window.VyzionSocialLinks?.applyFounderSocialLinks();
+    window.VyzionSocialLinks?.applyFooterSocialLinks();
 
     initNewsletterForms();
     initContactForm();

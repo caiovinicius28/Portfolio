@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Vyzion Systems Blog</title>
+    <link>https://vyzionsystems.com/blog.html</link>
+    <description>Digital growth guides on websites, SEO, performance and SaaS from Vyzion Systems.</description>
+    <language>en</language>
+    <lastBuildDate>Mon, 01 Mar 2026 00:00:00 GMT</lastBuildDate>
+    <atom:link href="https://vyzionsystems.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Why site speed matters for SEO and sales</title>
+      <link>https://vyzionsystems.com/blog-article.html?id=1</link>
+      <guid isPermaLink="true">https://vyzionsystems.com/blog-article.html?id=1</guid>
+      <pubDate>Sun, 01 Mar 2026 00:00:00 GMT</pubDate>
+      <description>Slow pages lose rankings and customers. How Vyzion optimizes performance, Core Web Vitals and mobile UX.</description>
+    </item>
+    <item>
+      <title>How a professional website generates more leads and trust</title>
+      <link>https://vyzionsystems.com/blog-article.html?id=2</link>
+      <guid isPermaLink="true">https://vyzionsystems.com/blog-article.html?id=2</guid>
+      <pubDate>Sun, 08 Feb 2026 00:00:00 GMT</pubDate>
+      <description>Strategic design, clear UX and well-placed CTAs turn visitors into opportunities.</description>
+    </item>
+    <item>
+      <title>What to prioritize in your digital stack in 2026</title>
+      <link>https://vyzionsystems.com/blog-article.html?id=3</link>
+      <guid isPermaLink="true">https://vyzionsystems.com/blog-article.html?id=3</guid>
+      <pubDate>Tue, 21 Jan 2026 00:00:00 GMT</pubDate>
+      <description>Technical SEO, marketing automation and custom software for growing businesses.</description>
+    </item>
+    <item>
+      <title>How Vyzion delivers projects: from brief to launch</title>
+      <link>https://vyzionsystems.com/blog-article.html?id=4</link>
+      <guid isPermaLink="true">https://vyzionsystems.com/blog-article.html?id=4</guid>
+      <pubDate>Wed, 10 Dec 2025 00:00:00 GMT</pubDate>
+      <description>Discover, design, build and launch with clear deliverables.</description>
+    </item>
+    <item>
+      <title>Landing pages that convert: what actually works</title>
+      <link>https://vyzionsystems.com/blog-article.html?id=5</link>
+      <guid isPermaLink="true">https://vyzionsystems.com/blog-article.html?id=5</guid>
+      <pubDate>Tue, 18 Nov 2025 00:00:00 GMT</pubDate>
+      <description>Hero, proof, offer and CTA — the anatomy of high-converting landing pages.</description>
+    </item>
+    <item>
+      <title>Custom SaaS vs off-the-shelf: when to build your own</title>
+      <link>https://vyzionsystems.com/blog-article.html?id=6</link>
+      <guid isPermaLink="true">https://vyzionsystems.com/blog-article.html?id=6</guid>
+      <pubDate>Wed, 22 Oct 2025 00:00:00 GMT</pubDate>
+      <description>When custom software pays off for scaling businesses.</description>
+    </item>
+    <item>
+      <title>7 UI mistakes that kill conversions (and how to fix them)</title>
+      <link>https://vyzionsystems.com/blog-article.html?id=7</link>
+      <guid isPermaLink="true">https://vyzionsystems.com/blog-article.html?id=7</guid>
+      <pubDate>Sun, 14 Sep 2025 00:00:00 GMT</pubDate>
+      <description>Slow loads, weak hierarchy and buried CTAs cost you sales every day.</description>
+    </item>
+    <item>
+      <title>AEO &amp; AI search: preparing your site for what's next</title>
+      <link>https://vyzionsystems.com/blog-article.html?id=8</link>
+      <guid isPermaLink="true">https://vyzionsystems.com/blog-article.html?id=8</guid>
+      <pubDate>Tue, 05 Aug 2025 00:00:00 GMT</pubDate>
+      <description>Structured data, clear answers and fast pages for Google and AI engines.</description>
+    </item>
+  </channel>
+</rss>

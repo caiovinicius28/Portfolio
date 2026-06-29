@@ -2,9 +2,12 @@
   "name": "vyzion-portfolio",
   "version": "1.0.0",
   "private": true,
+  "type": "module",
   "scripts": {
     "dev": "serve . -l 3000",
-    "start": "serve . -l 3000"
+    "start": "serve . -l 3000",
+    "index:submit": "node scripts/submit-indexing.mjs",
+    "index:verify": "node scripts/inject-verification.mjs"
   },
   "devDependencies": {
     "serve": "^14.2.4"

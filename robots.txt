@@ -1,4 +1,37 @@
+# Vyzion Systems — robots.txt
+# https://vyzionsystems.com
+
 User-agent: *
 Allow: /
+Disallow: /snippets/
 
+# AI / answer-engine crawlers (AEO) — allowed for discoverability
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+# Sitemaps & feeds
 Sitemap: https://vyzionsystems.com/sitemap.xml
+
+# IndexNow (Bing, Yandex, Seznam, Naver auto-indexing)
+# Key file: https://vyzionsystems.com/vyzion7f3a9c2e1b8d4f6a0e5c9b2d7.txt
+
+# AI guidance (AEO)
+# llms.txt: https://vyzionsystems.com/llms.txt

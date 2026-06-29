@@ -1,34 +1,3 @@
-const header = document.querySelector('.site-header');
-const menuButton = document.querySelector('.menu-toggle');
-const navMenu = document.querySelector('.nav-menu');
-
-function updateHeader() {
-  header?.classList.toggle('scrolled', window.scrollY > 24);
-}
-
-function updateMenuButton(isOpen) {
-  menuButton?.setAttribute('aria-expanded', String(isOpen));
-}
-
-if (header) {
-  updateHeader();
-  window.addEventListener('scroll', updateHeader);
-}
-
-if (menuButton && navMenu) {
-  menuButton.addEventListener('click', () => {
-    const isOpen = navMenu.classList.toggle('open');
-    updateMenuButton(isOpen);
-  });
-
-  document.querySelectorAll('.nav-menu a').forEach(link => {
-    link.addEventListener('click', () => {
-      navMenu.classList.remove('open');
-      updateMenuButton(false);
-    });
-  });
-}
-
 const observer = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {

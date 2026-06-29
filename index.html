@@ -2,6 +2,12 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <!-- indexing:google-site-verification -->
+  <!-- Add code to indexing-config.json then run npm run index:verify -->
+  <!-- /indexing:google -->
+  <!-- indexing:bing-site-verification -->
+  <!-- Add code to indexing-config.json then run npm run index:verify -->
+  <!-- /indexing:bing -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Vyzion Systems</title>
   <meta name="description" content="High-performance websites, landing pages and digital solutions for businesses that want to grow online." />
@@ -13,22 +19,25 @@
   <meta property="og:url" content="https://vyzionsystems.com/" />
   <meta property="og:image" content="https://vyzionsystems.com/public%20/images/brand/site.png" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="robots" content="index, follow" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+  <meta name="author" content="Vyzion Systems" />
+  <meta name="theme-color" content="#03070c" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:image:alt" content="Vyzion Systems — Premium web and digital solutions" />
+  <meta name="twitter:site" content="@vyzionsystems" />
+  <meta name="twitter:title" content="Vyzion Systems — Premium Web & Digital Solutions" />
+  <meta name="twitter:description" content="Websites, landing pages and custom software built to convert, rank and scale." />
+  <meta name="twitter:image" content="https://vyzionsystems.com/public%20/images/brand/site.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="alternate" type="application/rss+xml" title="Vyzion Systems Blog" href="/feed.xml" />
+  <link rel="alternate" hreflang="en" href="https://vyzionsystems.com/" />
+  <link rel="alternate" hreflang="pt-BR" href="https://vyzionsystems.com/" />
+  <link rel="alternate" hreflang="x-default" href="https://vyzionsystems.com/" />
   <script type="application/ld+json">
-  {"@context":"https://schema.org","@type":"Organization","name":"Vyzion Systems","url":"https://vyzionsystems.com","logo":"https://vyzionsystems.com/public%20/images/logos/logo1.png","description":"Premium websites, landing pages and custom software.","contactPoint":{"@type":"ContactPoint","telephone":"+55-62-99480-0483","contactType":"sales","availableLanguage":["English","Portuguese"]}}
+  {"@context":"https://schema.org","@type":"Organization","@id":"https://vyzionsystems.com/#organization","name":"Vyzion Systems","url":"https://vyzionsystems.com","logo":"https://vyzionsystems.com/public%20/images/logos/logo1.png","description":"Premium websites, landing pages and custom software built to convert, rank and scale.","foundingDate":"2024","sameAs":["https://www.linkedin.com/company/vyzion-systems","https://www.instagram.com/vyzionsystems"],"contactPoint":{"@type":"ContactPoint","telephone":"+55-62-99480-0483","contactType":"sales","availableLanguage":["English","Portuguese"],"areaServed":"Worldwide"}}
   </script>
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Blog",
-    "name": "Vyzion Systems Insights",
-    "description": "Articles on websites, SEO, web performance and SaaS from Vyzion Systems.",
-    "url": "https://vyzionsystems.com/#insights",
-    "publisher": {
-      "@type": "Organization",
-      "name": "Vyzion Systems"
-    }
-  }
+  {"@context":"https://schema.org","@type":"Blog","name":"Vyzion Systems Insights","description":"Articles on websites, SEO, web performance and SaaS from Vyzion Systems.","url":"https://vyzionsystems.com/blog.html","publisher":{"@type":"Organization","name":"Vyzion Systems","@id":"https://vyzionsystems.com/#organization"}}
   </script>
   <script>
     (function () {
@@ -52,7 +61,7 @@
   <link rel="stylesheet" href="css/home-newsletter.css" />
   <link rel="stylesheet" href="css/site-ext.css" />
 </head>
-<body>
+<body data-page="home">
   <div id="vyzion-loader" class="vyzion-loader" aria-live="polite">
     <div class="vyzion-loader-inner">
       <img class="vyzion-loader-logo" src="public%20/images/brand/silerlogo1.png" alt="" width="118" height="118" decoding="sync" />
@@ -73,36 +82,7 @@
     <span></span>
   </div>
 
-  <header class="site-header" id="top">
-    <div class="header-pill">
-      <a id="logotopper" href="index.html" class="brand" aria-label="Vyzion Systems">
-        <img src="public%20/images/logos/logo1.png" alt="Vyzion Systems" />
-        <h2>VYZION</h2>
-      </a>
-
-      <button class="menu-toggle" type="button" data-i18n-aria="menu.toggle" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
-
-      <nav class="nav-menu" data-i18n-aria="nav.main" aria-label="Main navigation">
-        <a href="about.html" data-i18n="nav.about">About</a>
-        <a href="#process" data-i18n="nav.works">Works</a>
-        <a href="blog.html" data-i18n="nav.blog">Blog</a>
-        <a href="contact.html" data-i18n="nav.contact">Contact</a>
-        <a href="https://zarlabs.online" class="nav-external" target="_blank" rel="noopener noreferrer">
-          <span data-i18n="nav.zarlabs">Zarlabs</span>
-          <span class="nav-ext-icon" aria-hidden="true">↗</span>
-        </a>
-      </nav>
-
-      <div class="header-actions">
-        <a class="header-cta" href="contact.html#book">
-          <span data-i18n="header.cta">Contact Us</span>
-          <span class="cta-icon" aria-hidden="true">↗</span>
-        </a>
-      </div>
-    </div>
-  </header>
+  <div id="site-header-mount"></div>
 
   <main>
     <section class="hero section" id="home">
@@ -316,6 +296,7 @@
               <div class="founder-front-meta">
                 <h3 data-i18n="founders.alizay.name">Alizay Ayesha</h3>
                 <p data-i18n="founders.role.alizay">Co-Founder & CEO</p>
+                <div class="founder-social" data-founder-social="alizay" hidden aria-label="Alizay Ayesha social links"></div>
               </div>
               <button class="founder-flip-btn" type="button" aria-label="View Alizay Ayesha bio" data-founder-flip>+</button>
             </div>
@@ -325,6 +306,7 @@
                 <h3 data-i18n="founders.alizay.name">Alizay Ayesha</h3>
                 <p class="founder-role" data-i18n="founders.role.alizay">Co-Founder & CEO</p>
                 <p class="founder-bio" data-i18n="founders.alizay.bio">A visionary leader driving marketing strategy, brand growth and client success, building digital experiences that help businesses scale with confidence.</p>
+                <div class="founder-social" data-founder-social="alizay" hidden aria-label="Alizay Ayesha social links"></div>
               </div>
             </div>
           </div>
@@ -336,6 +318,7 @@
               <div class="founder-front-meta">
                 <h3 data-i18n="founders.caio.name">Caio Vinicius A. Faguette</h3>
                 <p data-i18n="founders.role.caio">Co-Founder & CEO</p>
+                <div class="founder-social" data-founder-social="caio" hidden aria-label="Caio Vinicius social links"></div>
               </div>
               <button class="founder-flip-btn" type="button" aria-label="View Caio Vinicius bio" data-founder-flip>+</button>
             </div>
@@ -345,6 +328,7 @@
                 <h3 data-i18n="founders.caio.name">Caio Vinicius A. Faguette</h3>
                 <p class="founder-role" data-i18n="founders.role.caio">Co-Founder & CEO</p>
                 <p class="founder-bio" data-i18n="founders.caio.bio">A technology-driven founder focused on SaaS, custom software and high-performance digital products that turn ambitious ideas into scalable business solutions.</p>
+                <div class="founder-social" data-founder-social="caio" hidden aria-label="Caio Vinicius social links"></div>
               </div>
             </div>
           </div>
@@ -604,7 +588,7 @@
 
         <div class="home-insights-columns reveal delay-1">
           <article class="home-insights-col" itemscope itemtype="https://schema.org/Article">
-            <a href="blog.html" itemprop="url">
+            <a href="blog-article.html?id=1" itemprop="url">
               <div class="home-insights-media home-insights-media--tall">
                 <img src="public%20/images/portfolio/saas-platform.png" alt="" data-i18n-alt="insights.a1.imageAlt" itemprop="image" loading="lazy" />
               </div>
@@ -619,7 +603,7 @@
           </article>
 
           <article class="home-insights-col" itemscope itemtype="https://schema.org/Article">
-            <a href="blog.html" itemprop="url">
+            <a href="blog-article.html?id=2" itemprop="url">
               <div class="home-insights-media home-insights-media--square">
                 <img src="public%20/images/portfolio/voxly.png" alt="" data-i18n-alt="insights.a2.imageAlt" itemprop="image" loading="lazy" />
               </div>
@@ -634,7 +618,7 @@
           </article>
 
           <article class="home-insights-col" itemscope itemtype="https://schema.org/Article">
-            <a href="blog.html" itemprop="url">
+            <a href="blog-article.html?id=3" itemprop="url">
               <div class="home-insights-media home-insights-media--tall">
                 <img src="public%20/images/portfolio/brand-growth.png" alt="" data-i18n-alt="insights.a3.imageAlt" itemprop="image" loading="lazy" />
               </div>
@@ -649,7 +633,7 @@
           </article>
 
           <article class="home-insights-col" itemscope itemtype="https://schema.org/Article">
-            <a href="blog.html" itemprop="url">
+            <a href="blog-article.html?id=4" itemprop="url">
               <div class="home-insights-media home-insights-media--wide">
                 <img src="public%20/images/brand/site.png" alt="" data-i18n-alt="insights.a4.imageAlt" itemprop="image" loading="lazy" />
               </div>
@@ -690,10 +674,14 @@
 
   <script src="js/loader.js"></script>
   <script src="js/site-config.js"></script>
+  <script src="js/indexing-meta.js"></script>
   <script src="js/i18n/config.js"></script>
   <script src="js/i18n/translations.js"></script>
+  <script src="js/seo.js"></script>
   <script src="js/i18n/engine.js"></script>
   <script src="js/script.js"></script>
+  <script src="js/site-header.js"></script>
+  <script src="js/social-links.js"></script>
   <script src="js/site-ui.js"></script>
 </body>
 </html>

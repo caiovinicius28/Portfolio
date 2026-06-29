@@ -6,12 +6,26 @@
   <title>Blog — Vyzion Systems</title>
   <meta name="description" content="Digital growth articles from Vyzion Systems — SEO, web performance, landing pages, UX and custom SaaS." />
   <link rel="canonical" href="https://vyzionsystems.com/blog.html" />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <meta name="author" content="Vyzion Systems" />
+  <meta name="theme-color" content="#03070c" />
   <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Vyzion Systems" />
   <meta property="og:title" content="Vyzion Systems Blog — Digital Growth Insights" />
   <meta property="og:description" content="Practical guides on websites, SEO, performance and SaaS from the Vyzion team." />
   <meta property="og:url" content="https://vyzionsystems.com/blog.html" />
   <meta property="og:image" content="https://vyzionsystems.com/public%20/images/brand/site.png" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:image:alt" content="Vyzion Systems blog — digital growth guides" />
   <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Vyzion Systems Blog" />
+  <meta name="twitter:description" content="Guides on websites, SEO, performance and SaaS." />
+  <meta name="twitter:image" content="https://vyzionsystems.com/public%20/images/brand/site.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="alternate" type="application/rss+xml" title="Vyzion Systems Blog" href="/feed.xml" />
+  <link rel="alternate" hreflang="en" href="https://vyzionsystems.com/blog.html" />
+  <link rel="alternate" hreflang="pt-BR" href="https://vyzionsystems.com/blog.html" />
+  <link rel="alternate" hreflang="x-default" href="https://vyzionsystems.com/blog.html" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -36,18 +50,7 @@
   <div class="page-orb page-orb-a"></div>
   <div class="page-orb page-orb-b"></div>
   <div class="noise"></div>
-  <header class="site-header"><div class="header-pill">
-    <a href="index.html" class="brand"><img src="public%20/images/logos/logo1.png" alt="" /><h2>VYZION</h2></a>
-    <button class="menu-toggle" type="button" aria-label="Menu"><span></span><span></span><span></span></button>
-    <nav class="nav-menu">
-      <a href="about.html" data-i18n="nav.about">About</a>
-      <a href="index.html#process" data-i18n="nav.works">Works</a>
-      <a href="blog.html" class="is-active" data-i18n="nav.blog">Blog</a>
-      <a href="contact.html" data-i18n="nav.contact">Contact</a>
-      <a href="https://zarlabs.online" class="nav-external" target="_blank" rel="noopener"><span data-i18n="nav.zarlabs">Zarlabs</span><span class="nav-ext-icon">↗</span></a>
-    </nav>
-    <div class="header-actions"><a class="header-cta" href="contact.html"><span data-i18n="header.cta">Contact Us</span><span class="cta-icon">↗</span></a></div>
-  </div></header>
+  <div id="site-header-mount"></div>
 
   <main>
     <section class="blog-editorial-hero reveal">
@@ -63,7 +66,7 @@
           <div class="blog-carousel-track" id="blog-carousel-track">
             <article class="blog-chapter-card">
               <span class="blog-chapter-label" data-i18n="blog.chapterIntro">Introduction</span>
-              <a class="blog-chapter-link" href="blog.html#article-1">
+              <a class="blog-chapter-link" href="blog-article.html?id=1">
                 <div class="blog-chapter-image">
                   <img src="public%20/images/portfolio/saas-platform.png" alt="" loading="eager" />
                   <span class="blog-chapter-pill" data-i18n="blog.pill1">Speed &amp; SEO</span>
@@ -72,7 +75,7 @@
             </article>
             <article class="blog-chapter-card">
               <span class="blog-chapter-label" data-i18n="blog.chapter1">Chapter 1</span>
-              <a class="blog-chapter-link" href="blog.html#article-2">
+              <a class="blog-chapter-link" href="blog-article.html?id=2">
                 <div class="blog-chapter-image">
                   <img src="public%20/images/portfolio/voxly.png" alt="" loading="eager" />
                   <span class="blog-chapter-pill" data-i18n="blog.pill2">Leads &amp; trust</span>
@@ -81,7 +84,7 @@
             </article>
             <article class="blog-chapter-card">
               <span class="blog-chapter-label" data-i18n="blog.chapter2">Chapter 2</span>
-              <a class="blog-chapter-link" href="blog.html#article-3">
+              <a class="blog-chapter-link" href="blog-article.html?id=3">
                 <div class="blog-chapter-image">
                   <img src="public%20/images/portfolio/brand-growth.png" alt="" loading="eager" />
                   <span class="blog-chapter-pill" data-i18n="blog.pill3">Stack 2026</span>
@@ -90,7 +93,7 @@
             </article>
             <article class="blog-chapter-card">
               <span class="blog-chapter-label" data-i18n="blog.chapter3">Chapter 3</span>
-              <a class="blog-chapter-link" href="blog.html#article-4">
+              <a class="blog-chapter-link" href="blog-article.html?id=4">
                 <div class="blog-chapter-image">
                   <img src="public%20/images/brand/site.png" alt="" loading="eager" />
                   <span class="blog-chapter-pill" data-i18n="blog.pill4">How we deliver</span>
@@ -99,7 +102,7 @@
             </article>
             <article class="blog-chapter-card">
               <span class="blog-chapter-label" data-i18n="blog.chapter4">Chapter 4</span>
-              <a class="blog-chapter-link" href="blog.html#article-5">
+              <a class="blog-chapter-link" href="blog-article.html?id=5">
                 <div class="blog-chapter-image">
                   <img src="public%20/images/crm/login_crm.png" alt="" loading="lazy" />
                   <span class="blog-chapter-pill" data-i18n="blog.pill5">Landing pages</span>
@@ -108,7 +111,7 @@
             </article>
             <article class="blog-chapter-card">
               <span class="blog-chapter-label" data-i18n="blog.chapter5">Chapter 5</span>
-              <a class="blog-chapter-link" href="blog.html#article-6">
+              <a class="blog-chapter-link" href="blog-article.html?id=6">
                 <div class="blog-chapter-image">
                   <img src="public%20/images/brand/banner2.png" alt="" loading="lazy" />
                   <span class="blog-chapter-pill" data-i18n="blog.pill6">Custom SaaS</span>
@@ -117,7 +120,7 @@
             </article>
             <article class="blog-chapter-card">
               <span class="blog-chapter-label" data-i18n="blog.chapter6">Chapter 6</span>
-              <a class="blog-chapter-link" href="blog.html#article-7">
+              <a class="blog-chapter-link" href="blog-article.html?id=7">
                 <div class="blog-chapter-image">
                   <img src="public%20/images/brand/vyzion_1.jpg" alt="" loading="lazy" />
                   <span class="blog-chapter-pill" data-i18n="blog.pill7">UI/UX fixes</span>
@@ -126,7 +129,7 @@
             </article>
             <article class="blog-chapter-card">
               <span class="blog-chapter-label" data-i18n="blog.chapter7">Chapter 7</span>
-              <a class="blog-chapter-link" href="blog.html#article-8">
+              <a class="blog-chapter-link" href="blog-article.html?id=8">
                 <div class="blog-chapter-image">
                   <img src="public%20/images/brand/banner1.jpeg" alt="" loading="lazy" />
                   <span class="blog-chapter-pill" data-i18n="blog.pill8">AEO &amp; AI SEO</span>
@@ -166,7 +169,7 @@
       </div>
       <div class="blog-grid blog-grid--editorial">
         <article class="blog-card" id="article-1">
-          <a href="blog.html#article-1">
+          <a href="blog-article.html?id=1">
             <img src="public%20/images/portfolio/saas-platform.png" alt="" loading="lazy" />
             <div class="blog-card-body">
               <span class="blog-card-tag" data-i18n="blog.tag.seo">SEO</span>
@@ -178,7 +181,7 @@
           </a>
         </article>
         <article class="blog-card" id="article-2">
-          <a href="blog.html#article-2">
+          <a href="blog-article.html?id=2">
             <img src="public%20/images/portfolio/voxly.png" alt="" loading="lazy" />
             <div class="blog-card-body">
               <span class="blog-card-tag" data-i18n="blog.tag.web">Web</span>
@@ -190,7 +193,7 @@
           </a>
         </article>
         <article class="blog-card" id="article-3">
-          <a href="blog.html#article-3">
+          <a href="blog-article.html?id=3">
             <img src="public%20/images/portfolio/brand-growth.png" alt="" loading="lazy" />
             <div class="blog-card-body">
               <span class="blog-card-tag" data-i18n="blog.tag.strategy">Strategy</span>
@@ -202,7 +205,7 @@
           </a>
         </article>
         <article class="blog-card" id="article-4">
-          <a href="blog.html#article-4">
+          <a href="blog-article.html?id=4">
             <img src="public%20/images/brand/site.png" alt="" loading="lazy" />
             <div class="blog-card-body">
               <span class="blog-card-tag" data-i18n="blog.tag.process">Process</span>
@@ -214,7 +217,7 @@
           </a>
         </article>
         <article class="blog-card" id="article-5">
-          <a href="blog.html#article-5">
+          <a href="blog-article.html?id=5">
             <img src="public%20/images/crm/login_crm.png" alt="" loading="lazy" />
             <div class="blog-card-body">
               <span class="blog-card-tag" data-i18n="blog.tag.conversion">Conversion</span>
@@ -226,7 +229,7 @@
           </a>
         </article>
         <article class="blog-card" id="article-6">
-          <a href="blog.html#article-6">
+          <a href="blog-article.html?id=6">
             <img src="public%20/images/brand/banner2.png" alt="" loading="lazy" />
             <div class="blog-card-body">
               <span class="blog-card-tag" data-i18n="blog.tag.saas">SaaS</span>
@@ -238,7 +241,7 @@
           </a>
         </article>
         <article class="blog-card" id="article-7">
-          <a href="blog.html#article-7">
+          <a href="blog-article.html?id=7">
             <img src="public%20/images/brand/vyzion_1.jpg" alt="" loading="lazy" />
             <div class="blog-card-body">
               <span class="blog-card-tag" data-i18n="blog.tag.ux">UI/UX</span>
@@ -250,7 +253,7 @@
           </a>
         </article>
         <article class="blog-card" id="article-8">
-          <a href="blog.html#article-8">
+          <a href="blog-article.html?id=8">
             <img src="public%20/images/brand/banner1.jpeg" alt="" loading="lazy" />
             <div class="blog-card-body">
               <span class="blog-card-tag" data-i18n="blog.tag.seo">SEO</span>
@@ -265,6 +268,13 @@
     </section>
   </main>
   <div id="site-footer-mount"></div><div id="site-widgets-mount"></div>
-  <script src="js/loader.js"></script><script src="js/site-config.js"></script><script src="js/i18n/config.js"></script><script src="js/i18n/translations.js"></script><script src="js/i18n/engine.js"></script><script src="js/script.js"></script><script src="js/site-ui.js"></script>
+  <script src="js/blog-articles.js"></script>
+  <script src="js/loader.js"></script>
+  <script src="js/site-config.js"></script>
+  <script src="js/indexing-meta.js"></script>
+  <script src="js/i18n/config.js"></script>
+  <script src="js/i18n/translations.js"></script>
+  <script src="js/seo.js"></script>
+  <script src="js/i18n/engine.js"></script><script src="js/script.js"></script><script src="js/site-header.js"></script><script src="js/social-links.js"></script><script src="js/site-ui.js"></script>
 </body>
 </html>
