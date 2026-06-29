@@ -172,3 +172,8 @@
 .work-card.featured {
   transform: none;
 }
+
+.services-cta {
+  margin: 36px auto 0;
+  text-align: center;
+}

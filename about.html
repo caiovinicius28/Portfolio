@@ -21,6 +21,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/loader.css" />
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="css/hero-bento.css" />
   <link rel="stylesheet" href="css/header.css" />
@@ -31,6 +32,17 @@
   <link rel="stylesheet" href="css/site-ext.css" />
 </head>
 <body data-page="about">
+  <div id="vyzion-loader" class="vyzion-loader" aria-live="polite">
+    <div class="vyzion-loader-inner">
+      <img class="vyzion-loader-logo" src="public%20/images/brand/silerlogo1.png" alt="" width="118" height="118" decoding="sync" />
+      <div class="vyzion-loader-bar" role="progressbar" aria-label="Loading" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+        <span class="vyzion-loader-bar-track" aria-hidden="true"></span>
+        <span class="vyzion-loader-bar-fill" aria-hidden="true"></span>
+        <span class="vyzion-loader-bar-flare" aria-hidden="true"></span>
+        <span class="vyzion-loader-bar-tip" aria-hidden="true"></span>
+      </div>
+    </div>
+  </div>
   <div class="page-orb page-orb-a"></div>
   <div class="page-orb page-orb-b"></div>
   <div class="noise"></div>
@@ -53,6 +65,7 @@
 
       <nav class="nav-menu" data-i18n-aria="nav.main" aria-label="Main navigation">
         <a href="about.html" class="is-active" data-i18n="nav.about">About</a>
+        <a href="#process" data-i18n="nav.works">Works</a>
         <a href="blog.html" data-i18n="nav.blog">Blog</a>
         <a href="contact.html" data-i18n="nav.contact">Contact</a>
         <a href="https://zarlabs.online" class="nav-external" target="_blank" rel="noopener noreferrer">
@@ -178,14 +191,6 @@
       </div>
     </section>
 
-    <section class="about-what section" id="what-we-do">
-      <div class="about-what-inner reveal">
-        <div class="eyebrow center" data-i18n="services.eyebrow">What we do</div>
-        <h2 data-i18n="services.title">Digital solutions that take your business to the next level.</h2>
-        <p data-i18n="services.lead">From strategy and design to custom software — we build digital experiences that convert and scale.</p>
-      </div>
-    </section>
-
     <section class="about-process section" id="process">
       <div class="about-process-shell reveal delay-1">
         <div class="about-process-header">
@@ -284,70 +289,73 @@
       </div>
     </section>
 
-    <section class="empower section" id="empower">
+    <section class="empower section" id="services">
       <div class="empower-header reveal">
-        <h2 class="empower-title">
-          <span data-i18n="empower.title">Empower</span>
-          <strong data-i18n="empower.titleEmphasis">business</strong>
-          <span data-i18n="empower.titleEnd">growth and innovation</span>
-        </h2>
-        <p class="empower-intro" data-i18n="empower.intro">Unlock the potential of your business with marketing strategies and solutions that drive growth, innovation, and success.</p>
+        <p class="eyebrow empower-eyebrow" data-i18n="services.eyebrow">What we do</p>
+        <h2 class="empower-title" data-i18n="services.sectionTitle">Services</h2>
+        <p class="empower-intro" data-i18n="empower.intro">Crafted websites, landing pages, brand identity and ongoing support — everything your business needs to grow and innovate online.</p>
       </div>
 
       <div class="empower-grid reveal delay-1">
         <article class="empower-card">
-          <div class="empower-card-top">
-            <h3 data-i18n="empower.card1.title">Strategic Marketing</h3>
-            <div class="empower-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M8 12h8M8 8h5M8 16h6"/><rect x="4" y="4" width="16" height="16" rx="3"/></svg>
-            </div>
+          <div class="empower-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 010 18M12 3a14 14 0 000 18"/></svg>
           </div>
-          <p data-i18n="empower.card1.text">Providing strategic guidance to help brands grow with clarity, focus and measurable impact.</p>
+          <h3 data-i18n="empower.card1.title">Crafted Websites</h3>
         </article>
         <article class="empower-card">
-          <div class="empower-card-top">
-            <h3 data-i18n="empower.card2.title">Marketing Excellence</h3>
-            <div class="empower-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="5" width="18" height="12" rx="2"/><path d="M8 21h8"/></svg>
-            </div>
+          <div class="empower-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 20h4l10-10-4-4L4 16v4z"/><path d="M13 7l4 4"/></svg>
           </div>
-          <p data-i18n="empower.card2.text">Building high-impact campaigns and digital presence to dominate your market space.</p>
+          <h3 data-i18n="empower.card2.title">Website Redesign</h3>
         </article>
         <article class="empower-card">
-          <div class="empower-card-top">
-            <h3 data-i18n="empower.card3.title">SaaS Solutions</h3>
-            <div class="empower-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="5" y="7" width="14" height="4" rx="2"/><rect x="5" y="13" width="14" height="4" rx="2"/></svg>
-            </div>
+          <div class="empower-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="9" cy="20" r="1"/><circle cx="17" cy="20" r="1"/><path d="M3 4h2l2 12h10l2-8H7"/></svg>
           </div>
-          <p data-i18n="empower.card3.text">Designing scalable tools that redefine how businesses operate and scale online.</p>
+          <h3 data-i18n="empower.card3.title">eCommerce Website Design</h3>
         </article>
         <article class="empower-card">
-          <div class="empower-card-top">
-            <h3 data-i18n="empower.card4.title">Data-Driven Insights</h3>
-            <div class="empower-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 18V10M10 18V6M15 18v-5M20 18v-8"/></svg>
-            </div>
+          <div class="empower-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 7h14M5 12h14M5 17h14"/></svg>
           </div>
-          <p data-i18n="empower.card4.text">Leveraging analytics and intelligence to guide smarter decisions and optimize performance.</p>
+          <h3 data-i18n="empower.card4.title">CMS &amp; Dynamic Websites</h3>
         </article>
         <article class="empower-card">
-          <div class="empower-card-top">
-            <h3 data-i18n="empower.card5.title">Brand Amplification</h3>
-            <div class="empower-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 10v4h4l5 4V6L8 10H4z"/><path d="M16 8a4 4 0 010 8"/></svg>
-            </div>
+          <div class="empower-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 12l18-9-9 18-2-7-7-2z"/></svg>
           </div>
-          <p data-i18n="empower.card5.text">Creating bold creative strategies to maximize visibility, trust and audience engagement.</p>
+          <h3 data-i18n="empower.card5.title">Landing Pages &amp; Microsites</h3>
         </article>
         <article class="empower-card">
-          <div class="empower-card-top">
-            <h3 data-i18n="empower.card6.title">Innovation Incubation</h3>
-            <div class="empower-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 18h6M10 22h4M12 2a6 6 0 016 6c0 2.2-1.2 4.1-3 5.2V15H9v-1.8C7.2 12.1 6 10.2 6 8a6 6 0 016-6z"/></svg>
-            </div>
+          <div class="empower-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M8 8h8v8H8zM8 8l-4-4M16 8l4-4M8 16l-4 4M16 16l4 4"/></svg>
           </div>
-          <p data-i18n="empower.card6.text">Partnering with visionary founders to launch products, platforms and digital experiences.</p>
+          <h3 data-i18n="empower.card6.title">Consistent Identity</h3>
+        </article>
+        <article class="empower-card">
+          <div class="empower-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M13 2L4 14h7l-1 8 10-14H13l1-6z"/></svg>
+          </div>
+          <h3 data-i18n="empower.card7.title">Motion &amp; Interaction Design</h3>
+        </article>
+        <article class="empower-card">
+          <div class="empower-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+          </div>
+          <h3 data-i18n="empower.card8.title">UX Centric Strategy</h3>
+        </article>
+        <article class="empower-card">
+          <div class="empower-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 15l4-4 3 3 6-7"/><path d="M14 7h5v5"/></svg>
+          </div>
+          <h3 data-i18n="empower.card9.title">Performance Optimization</h3>
+        </article>
+        <article class="empower-card">
+          <div class="empower-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14 7l-2 2 2 2M10 9l2-2-2-2"/><path d="M4 14v2a2 2 0 002 2h12a2 2 0 002-2v-2"/></svg>
+          </div>
+          <h3 data-i18n="empower.card10.title">Maintenance &amp; Ongoing Support</h3>
         </article>
       </div>
     </section>
@@ -413,6 +421,7 @@
   <div id="site-footer-mount"></div>
   <div id="site-widgets-mount"></div>
 
+  <script src="js/loader.js"></script>
   <script src="js/site-config.js"></script>
   <script src="js/i18n/config.js"></script>
   <script src="js/i18n/translations.js"></script>

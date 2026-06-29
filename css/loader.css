@@ -1,0 +1,147 @@
+/* Full-screen Vyzion splash loader */
+
+body.loader-active {
+  overflow: hidden;
+}
+
+.vyzion-loader {
+  position: fixed;
+  inset: 0;
+  z-index: 99999;
+  display: grid;
+  place-items: center;
+  background: #000;
+  transition: opacity 0.65s ease, visibility 0.65s ease;
+}
+
+.vyzion-loader.is-done {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.vyzion-loader-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
+}
+
+.vyzion-loader-logo {
+  width: min(118px, 28vw);
+  height: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 0 24px rgba(255, 255, 255, 0.12));
+  animation: loader-logo-in 0.8s ease both;
+}
+
+.vyzion-loader-bar {
+  position: relative;
+  width: min(148px, 42vw);
+  height: 2px;
+  margin-top: 26px;
+}
+
+.vyzion-loader-bar-track {
+  position: absolute;
+  inset: 0;
+  border-radius: 999px;
+  background: rgba(0, 100, 140, 0.35);
+}
+
+.vyzion-loader-bar-fill {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 0;
+  border-radius: 999px;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 120, 170, 0.25) 0%,
+    rgba(0, 183, 255, 0.85) 85%,
+    rgba(11, 211, 255, 1) 100%
+  );
+  box-shadow: 0 0 14px rgba(0, 183, 255, 0.55);
+  transition: width 0.12s ease-out;
+  animation: loader-bar-fill 1.35s ease-out forwards;
+}
+
+.vyzion-loader-bar-tip {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  background: #0bd3ff;
+  box-shadow:
+    0 0 8px 2px rgba(11, 211, 255, 0.95),
+    0 0 22px 6px rgba(0, 183, 255, 0.55),
+    0 0 48px 12px rgba(0, 183, 255, 0.22);
+  transition: left 0.12s ease-out;
+  animation: loader-bar-tip 1.35s ease-out forwards;
+}
+
+.vyzion-loader-bar-flare {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 36px;
+  height: 1px;
+  transform: translate(-50%, -50%);
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(11, 211, 255, 0.15) 35%,
+    rgba(11, 211, 255, 0.85) 100%
+  );
+  filter: blur(0.5px);
+  pointer-events: none;
+  transition: left 0.12s ease-out;
+  animation: loader-bar-tip 1.35s ease-out forwards;
+}
+
+@keyframes loader-bar-fill {
+  from { width: 0; }
+  to { width: 88%; }
+}
+
+@keyframes loader-bar-tip {
+  from { left: 0; }
+  to { left: 88%; }
+}
+
+@keyframes loader-logo-in {
+  from {
+    opacity: 0;
+    transform: scale(0.92);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .vyzion-loader-logo {
+    animation: none;
+  }
+
+  .vyzion-loader-bar-fill,
+  .vyzion-loader-bar-tip,
+  .vyzion-loader-bar-flare {
+    animation: none;
+    transition: none;
+  }
+
+  .vyzion-loader-bar-fill {
+    width: 88%;
+  }
+
+  .vyzion-loader-bar-tip,
+  .vyzion-loader-bar-flare {
+    left: 88%;
+  }
+}

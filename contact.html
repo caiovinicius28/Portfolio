@@ -20,12 +20,24 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/loader.css" />
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="css/header.css" />
   <link rel="stylesheet" href="css/site-ext.css" />
   <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
 </head>
 <body data-page="contact">
+  <div id="vyzion-loader" class="vyzion-loader" aria-live="polite">
+    <div class="vyzion-loader-inner">
+      <img class="vyzion-loader-logo" src="public%20/images/brand/silerlogo1.png" alt="" width="118" height="118" decoding="sync" />
+      <div class="vyzion-loader-bar" role="progressbar" aria-label="Loading" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+        <span class="vyzion-loader-bar-track" aria-hidden="true"></span>
+        <span class="vyzion-loader-bar-fill" aria-hidden="true"></span>
+        <span class="vyzion-loader-bar-flare" aria-hidden="true"></span>
+        <span class="vyzion-loader-bar-tip" aria-hidden="true"></span>
+      </div>
+    </div>
+  </div>
   <div class="page-orb page-orb-a"></div>
   <div class="page-orb page-orb-b"></div>
   <div class="noise"></div>
@@ -39,6 +51,7 @@
       <button class="menu-toggle" type="button" aria-expanded="false" aria-label="Open menu"><span></span><span></span><span></span></button>
       <nav class="nav-menu" aria-label="Main navigation">
         <a href="about.html" data-i18n="nav.about">About</a>
+        <a href="index.html#process" data-i18n="nav.works">Works</a>
         <a href="blog.html" data-i18n="nav.blog">Blog</a>
         <a href="contact.html" class="is-active" data-i18n="nav.contact">Contact</a>
         <a href="https://zarlabs.online" class="nav-external" target="_blank" rel="noopener noreferrer"><span data-i18n="nav.zarlabs">Zarlabs</span><span class="nav-ext-icon" aria-hidden="true">↗</span></a>
@@ -172,6 +185,7 @@
   <div id="site-footer-mount"></div>
   <div id="site-widgets-mount"></div>
 
+  <script src="js/loader.js"></script>
   <script src="js/site-config.js"></script>
   <script src="js/i18n/config.js"></script>
   <script src="js/i18n/translations.js"></script>

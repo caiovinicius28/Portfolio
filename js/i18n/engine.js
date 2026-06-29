@@ -4,7 +4,7 @@
   const CACHE_PREFIX = 'vyzion-locale-dict-';
   const LOCALE_KEY = 'vyzion-detected-locale';
   const COUNTRY_KEY = 'vyzion-detected-country';
-  const CACHE_VERSION = '15';
+  const CACHE_VERSION = '19';
 
   function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));

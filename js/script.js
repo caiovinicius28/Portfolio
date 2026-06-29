@@ -199,6 +199,50 @@ function initServicesCarousel(servicesSectionCarousel) {
 
 document.querySelectorAll('.services-carousel').forEach(initServicesCarousel);
 
+function initBlogEditorialCarousel() {
+  const outer = document.querySelector('.blog-carousel-outer');
+  const track = document.getElementById('blog-carousel-track');
+  const prevBtn = outer?.querySelector('.blog-carousel-btn.prev');
+  const nextBtn = outer?.querySelector('.blog-carousel-btn.next');
+  if (!outer || !track || !prevBtn || !nextBtn) return;
+
+  const cards = () => [...track.querySelectorAll('.blog-chapter-card')];
+
+  function scrollAmount() {
+    const card = cards()[0];
+    if (!card) return 280;
+    return card.offsetWidth + 14;
+  }
+
+  function updateButtons() {
+    const maxScroll = track.scrollWidth - track.clientWidth - 2;
+    prevBtn.disabled = track.scrollLeft <= 2;
+    nextBtn.disabled = track.scrollLeft >= maxScroll;
+  }
+
+  prevBtn.addEventListener('click', () => {
+    track.scrollBy({ left: -scrollAmount(), behavior: 'smooth' });
+  });
+
+  nextBtn.addEventListener('click', () => {
+    track.scrollBy({ left: scrollAmount(), behavior: 'smooth' });
+  });
+
+  track.addEventListener('scroll', updateButtons, { passive: true });
+  window.addEventListener('resize', updateButtons);
+  updateButtons();
+}
+
+initBlogEditorialCarousel();
+
+document.querySelectorAll('[data-site-email]').forEach(link => {
+  const email = window.VYZION_SITE?.email;
+  if (email) {
+    link.href = `mailto:${email}`;
+    link.textContent = email;
+  }
+});
+
 const canUsePointerEffects = window.matchMedia('(hover: hover) and (pointer: fine)').matches
   && !window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
