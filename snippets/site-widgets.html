@@ -1,0 +1,34 @@
+<div class="cookie-banner" id="cookie-banner" hidden role="dialog" aria-labelledby="cookie-title">
+  <div class="cookie-banner-inner">
+    <p id="cookie-title"><strong data-i18n="cookie.title">We use cookies</strong> — <span data-i18n="cookie.text">to improve your experience and analyze traffic. See our</span> <a href="cookies.html" data-i18n="nav.cookies">Cookie Policy</a>.</p>
+    <div class="cookie-banner-actions">
+      <button type="button" class="btn btn-outline cookie-decline" data-i18n="cookie.decline">Decline</button>
+      <button type="button" class="btn btn-primary cookie-accept" data-i18n="cookie.accept">Accept</button>
+    </div>
+  </div>
+</div>
+
+<div class="chatbot" id="chatbot">
+  <div class="chatbot-panel" id="chatbot-panel" hidden aria-live="polite">
+    <header class="chatbot-header">
+      <div>
+        <strong data-i18n="chat.title">Vyzion Assistant</strong>
+        <span data-i18n="chat.subtitle">We typically reply within minutes</span>
+      </div>
+      <button type="button" class="chatbot-close" id="chatbot-close" aria-label="Close chat">×</button>
+    </header>
+    <div class="chatbot-messages" id="chatbot-messages">
+      <div class="chatbot-msg bot" data-i18n="chat.greeting">Hi! Looking for a website, landing page or custom software? I can help you get started.</div>
+    </div>
+    <div class="chatbot-quick" id="chatbot-quick">
+      <button type="button" data-action="services" data-i18n="chat.btn.services">Our services</button>
+      <button type="button" data-action="book" data-i18n="chat.btn.book">Book free call</button>
+      <button type="button" data-action="quote" data-i18n="chat.btn.quote">Request a quote</button>
+      <button type="button" data-action="whatsapp" data-i18n="chat.btn.whatsapp">WhatsApp</button>
+    </div>
+  </div>
+  <button type="button" class="chatbot-toggle" id="chatbot-toggle" aria-expanded="false" aria-controls="chatbot-panel">
+    <span class="chatbot-toggle-icon" aria-hidden="true">💬</span>
+    <span data-i18n="chat.toggle">Chat with us</span>
+  </button>
+</div>

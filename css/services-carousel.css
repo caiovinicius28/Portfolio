@@ -1,0 +1,174 @@
+/* Services section — equal-size card carousel */
+.services-carousel {
+  position: relative;
+  display: grid;
+  grid-template-columns: 44px 1fr 44px;
+  grid-template-rows: 1fr auto;
+  gap: 0 12px;
+  align-items: center;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.services-carousel-viewport {
+  grid-column: 2;
+  grid-row: 1;
+  overflow: hidden;
+  width: 100%;
+}
+
+.services-carousel-track {
+  display: flex;
+  gap: 18px;
+  transition: transform 0.55s cubic-bezier(0.25, 0.8, 0.25, 1);
+  will-change: transform;
+}
+
+.services-carousel .service-card {
+  flex: 0 0 var(--service-card-width, 280px);
+  width: var(--service-card-width, 280px);
+  min-height: 300px;
+  height: 300px;
+  margin-top: 0 !important;
+  padding: 34px 26px 28px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  box-sizing: border-box;
+  transform: none !important;
+}
+
+.services-carousel .service-card.reveal.show {
+  transform: none !important;
+}
+
+.services-carousel .service-card:hover {
+  border-color: rgba(0, 183, 255, 0.34);
+  box-shadow: 0 28px 65px rgba(0, 0, 0, 0.36), 0 0 42px rgba(0, 183, 255, 0.09);
+}
+
+.services-carousel .service-icon {
+  flex-shrink: 0;
+  width: 58px;
+  height: 58px;
+  margin-bottom: 22px;
+  display: grid;
+  place-items: center;
+  font-size: 25px;
+}
+
+.services-carousel .service-card h3 {
+  flex-shrink: 0;
+  max-width: 100%;
+  margin-bottom: 12px;
+  font-size: 16px;
+  line-height: 1.25;
+  text-transform: none;
+}
+
+.services-carousel .service-card p {
+  flex: 1;
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.6;
+  overflow: hidden;
+}
+
+.services-carousel-btn {
+  grid-row: 1;
+  width: 44px;
+  height: 44px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.04);
+  color: #e4e4e7;
+  font-size: 26px;
+  line-height: 1;
+  cursor: pointer;
+  transition: border-color 0.25s ease, background 0.25s ease, color 0.25s ease;
+}
+
+.services-carousel-btn:hover {
+  border-color: rgba(0, 183, 255, 0.45);
+  background: rgba(0, 183, 255, 0.1);
+  color: #fff;
+}
+
+.services-carousel-btn.prev {
+  grid-column: 1;
+}
+
+.services-carousel-btn.next {
+  grid-column: 3;
+}
+
+.services-carousel-dots {
+  grid-column: 1 / -1;
+  grid-row: 2;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 28px;
+}
+
+.services-carousel-dots span {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.2);
+  transition: background 0.3s ease, transform 0.3s ease;
+  cursor: pointer;
+}
+
+.services-carousel-dots span.is-active {
+  background: var(--blue, #00b7ff);
+  transform: scale(1.2);
+}
+
+@media (max-width: 780px) {
+  .services-carousel {
+    grid-template-columns: 36px 1fr 36px;
+    gap: 0 8px;
+  }
+
+  .services-carousel-btn {
+    width: 36px;
+    height: 36px;
+    font-size: 22px;
+  }
+
+  .services-carousel .service-card {
+    min-height: 280px;
+    height: 280px;
+    padding: 28px 22px 24px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .services-carousel-track {
+    transition: none;
+  }
+}
+
+/* No hover zoom / lift on cards */
+.bento-card:hover,
+.bento-services-carousel:hover,
+.services-carousel .service-card:hover,
+.service-card:hover,
+.service-card.reveal.show:hover,
+.work-card:hover,
+.work-card:hover img,
+.step.reveal.show:hover,
+.contact-panel:hover,
+.contact-panel:hover > img {
+  transform: none !important;
+}
+
+.service-card:hover .service-icon {
+  transform: none !important;
+}
+
+.work-card.featured {
+  transform: none;
+}

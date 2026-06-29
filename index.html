@@ -1,14 +1,55 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Vyzion Systems</title>
-  <meta name="description" content="Sites, landing pages e soluções digitais de alta performance para empresas que querem crescer no digital." />
+  <meta name="description" content="High-performance websites, landing pages and digital solutions for businesses that want to grow online." />
+  <link rel="canonical" href="https://vyzionsystems.com/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Vyzion Systems" />
+  <meta property="og:title" content="Vyzion Systems — Premium Web & Digital Solutions" />
+  <meta property="og:description" content="Websites, landing pages and custom software built to convert, rank and scale." />
+  <meta property="og:url" content="https://vyzionsystems.com/" />
+  <meta property="og:image" content="https://vyzionsystems.com/public%20/images/brand/site.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="robots" content="index, follow" />
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"Organization","name":"Vyzion Systems","url":"https://vyzionsystems.com","logo":"https://vyzionsystems.com/public%20/images/logos/logo1.png","description":"Premium websites, landing pages and custom software.","contactPoint":{"@type":"ContactPoint","telephone":"+55-62-99480-0483","contactType":"sales","availableLanguage":["English","Portuguese"]}}
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Blog",
+    "name": "Vyzion Systems Insights",
+    "description": "Articles on websites, SEO, web performance and SaaS from Vyzion Systems.",
+    "url": "https://vyzionsystems.com/#insights",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Vyzion Systems"
+    }
+  }
+  </script>
+  <script>
+    (function () {
+      var locale = localStorage.getItem('vyzion-detected-locale');
+      var map = { pt: 'pt-BR', en: 'en-US', es: 'es', ar: 'ar', fr: 'fr', de: 'de' };
+      if (locale && map[locale]) document.documentElement.lang = map[locale];
+      if (locale === 'ar') document.documentElement.dir = 'rtl';
+    })();
+  </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/hero-bento.css" />
+  <link rel="stylesheet" href="css/header.css" />
+  <link rel="stylesheet" href="css/services-carousel.css" />
+  <link rel="stylesheet" href="css/about-page.css" />
+  <link rel="stylesheet" href="css/home-who-stats.css" />
+  <link rel="stylesheet" href="css/process-section.css" />
+  <link rel="stylesheet" href="css/home-newsletter.css" />
+  <link rel="stylesheet" href="css/site-ext.css" />
 </head>
 <body>
   <div class="page-orb page-orb-a"></div>
@@ -21,72 +62,282 @@
   </div>
 
   <header class="site-header" id="top">
-    <a id="logotopper" href="#home" class="brand" aria-label="Vyzion Systems">
-      <img src="assets/logo1.png" alt="Vyzion Systems" />
-      <h2>VYZION SYSTEMS</h2>
-    </a>
-
-    <button class="menu-toggle" type="button" data-i18n-aria="menu.toggle" aria-expanded="false">
-      <span></span><span></span><span></span>
-    </button>
-
-    <nav class="nav-menu" data-i18n-aria="nav.main" aria-label="Navegação principal">
-      <a href="#home" data-i18n="nav.home">Início</a>
-      <a href="#about" data-i18n="nav.about">Sobre</a>
-      <a href="#services" data-i18n="nav.services">Serviços</a>
-      <a href="#portfolio" data-i18n="nav.portfolio">Portfólio</a>
-      <a href="#process" data-i18n="nav.process">Processo</a>
-      <a href="#contact" data-i18n="nav.contact">Contato</a>
-    </nav>
-
-    <div class="header-actions">
-      <div class="language-switcher" aria-label="Language switcher">
-        <button class="lang-btn" type="button" data-lang="pt" aria-label="Português">PT</button>
-        <button class="lang-btn" type="button" data-lang="en" aria-label="English">EN</button>
-      </div>
-      <a class="header-cta" href="https://wa.me/5562994800483" target="_blank" rel="noopener">
-        <span data-i18n="header.cta">Falar com especialista</span> <span>↗</span>
+    <div class="header-pill">
+      <a id="logotopper" href="index.html" class="brand" aria-label="Vyzion Systems">
+        <img src="public%20/images/logos/logo1.png" alt="Vyzion Systems" />
+        <h2>VYZION</h2>
       </a>
+
+      <button class="menu-toggle" type="button" data-i18n-aria="menu.toggle" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav-menu" data-i18n-aria="nav.main" aria-label="Main navigation">
+        <a href="about.html" data-i18n="nav.about">About</a>
+        <a href="blog.html" data-i18n="nav.blog">Blog</a>
+        <a href="contact.html" data-i18n="nav.contact">Contact</a>
+        <a href="https://zarlabs.online" class="nav-external" target="_blank" rel="noopener noreferrer">
+          <span data-i18n="nav.zarlabs">Zarlabs</span>
+          <span class="nav-ext-icon" aria-hidden="true">↗</span>
+        </a>
+      </nav>
+
+      <div class="header-actions">
+        <a class="header-cta" href="contact.html#book">
+          <span data-i18n="header.cta">Contact Us</span>
+          <span class="cta-icon" aria-hidden="true">↗</span>
+        </a>
+      </div>
     </div>
   </header>
 
   <main>
     <section class="hero section" id="home">
-      <div class="hero-content reveal">
-        <div class="eyebrow" data-i18n="hero.eyebrow">Tecnologia. Design. Resultados.</div>
-        <h1><span data-i18n="hero.title">Transformamos ideias em</span> <strong><span data-i18n="hero.titleEmphasis">experiências digitais.</span></strong></h1>
-        <p data-i18n="hero.subtitle">Sites e landing pages de alta performance que elevam sua marca e geram resultados reais.</p>
-        <div class="hero-actions">
-          <a class="btn btn-primary" href="#services"><span data-i18n="hero.cta1">Conheça nossas soluções</span> <span>→</span></a>
-        </div>
+      <div class="hero-intro reveal">
+        <h1 data-i18n="hero.title">Web & Motion Premium Que Faz Clientes Quererem Comprar</h1>
+        <p data-i18n="hero.subtitle">Transformando startups, PMEs e grandes empresas em líderes digitais.</p>
       </div>
 
-      <div class="hero-trust reveal delay-2">
-        <p data-i18n="hero.trusted">Soluções digitais criadas para gerar presença, performance e crescimento.</p>
-        <div class="hero-trust-items" aria-label="Diferenciais da Vyzion">
-          <span data-i18n="hero.trust1">Estratégia</span>
-          <span data-i18n="hero.trust2">Design</span>
-          <span data-i18n="hero.trust3">Tecnologia</span>
-          <span data-i18n="hero.trust4">Resultados</span>
+      <div class="hero-bento reveal delay-1">
+        <article class="bento-card bento-project-a">
+          <div class="bento-media">
+            <video autoplay muted loop playsinline poster="public%20/images/brand/site.png">
+              <source src="public%20/video%20hero/services.mp4" type="video/mp4" />
+            </video>
+          </div>
+          <div class="bento-meta">
+            <span class="bento-star" aria-hidden="true">★</span>
+            <span class="bento-name" data-i18n="hero.project1.name">SERVICES</span>
+            <span class="bento-badge" aria-hidden="true">✓</span>
+          </div>
+        </article>
+
+        <article class="bento-card bento-showreel">
+          <div class="bento-media">
+            <video autoplay muted loop playsinline poster="public%20/images/brand/crome.png">
+              <source src="public%20/video%20hero/reel.mp4" type="video/mp4" />
+            </video>
+          </div>
+          <div class="bento-meta">
+            <span class="bento-name" data-i18n="hero.showreel.title">Vyzion Showreel</span>
+            <span class="bento-label" data-i18n="hero.showreel.label">Preview</span>
+          </div>
+        </article>
+
+        <a class="bento-card bento-cta" href="#contact">
+          <div class="bento-cta-copy">
+            <span class="bento-cta-title" data-i18n="hero.ctaAll">Contact Us</span>
+            <p class="bento-cta-tagline" data-i18n="hero.ctaTagline">We are an MVP services provider one agency all solutions.</p>
+          </div>
+          <span class="cta-icon" aria-hidden="true">↗</span>
+        </a>
+
+        <article class="bento-card bento-project-b">
+          <div class="bento-media">
+            <video autoplay muted loop playsinline poster="public%20/images/crm/login_crm.png">
+              <source src="public%20/video%20hero/BEST%20UI%20UX.mp4" type="video/mp4" />
+            </video>
+          </div>
+          <div class="bento-meta">
+            <span class="bento-name" data-i18n="hero.project2.name">BEST UI UX</span>
+          </div>
+        </article>
+
+        <article class="bento-card bento-project-c bento-services-carousel">
+          <div class="service-carousel" aria-label="Services" aria-live="polite">
+            <div class="service-carousel-viewport">
+              <div class="service-carousel-track">
+                <div class="service-slide is-active" data-slide="0">
+                  <div class="service-icon-glass" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+                  </div>
+                  <span class="service-slide-name">SEO</span>
+                </div>
+                <div class="service-slide" data-slide="1">
+                  <div class="service-icon-glass" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 3l1.8 5.6L19 10l-5.2 1.4L12 17l-1.8-5.6L5 10l5.2-1.4L12 3z"/><circle cx="18" cy="6" r="2"/></svg>
+                  </div>
+                  <span class="service-slide-name">AEO</span>
+                </div>
+                <div class="service-slide" data-slide="2">
+                  <div class="service-icon-glass" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2v4M5 7l3 3M19 7l-3 3M5 17l3-3M19 17l-3-3M12 18v4"/><circle cx="12" cy="12" r="3"/></svg>
+                  </div>
+                  <span class="service-slide-name">CRAWLER</span>
+                </div>
+                <div class="service-slide" data-slide="3">
+                  <div class="service-icon-glass" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 18V6l8-3 8 3v12l-8 3-8-3z"/><path d="M12 9v9M8 11v5M16 11v5"/></svg>
+                  </div>
+                  <span class="service-slide-name">TOP TECHNICAL RANKING</span>
+                </div>
+                <div class="service-slide" data-slide="4">
+                  <div class="service-icon-glass" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M7 4h10v16H7z"/><path d="M9 8h6M9 12h6M9 16h4"/><path d="M11 2v2M13 2v2"/></svg>
+                  </div>
+                  <span class="service-slide-name">TOP AUDIT REPORT FILE</span>
+                </div>
+                <div class="service-slide" data-slide="5">
+                  <div class="service-icon-glass" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M8 6h8l2 4v8H6V10l2-4z"/><path d="M9 14h6M9 17h4"/></svg>
+                  </div>
+                  <span class="service-slide-name">CUSTOM MADE SOFTWARE</span>
+                </div>
+                <div class="service-slide" data-slide="6">
+                  <div class="service-icon-glass" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 7h16v10H4z"/><path d="M8 11h8M8 14h5"/><path d="M12 7V4"/></svg>
+                  </div>
+                  <span class="service-slide-name">SAAS</span>
+                </div>
+                <div class="service-slide" data-slide="7">
+                  <div class="service-icon-glass" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M7 9h4M7 13h10M7 17h7"/><circle cx="17" cy="9" r="1.5"/></svg>
+                  </div>
+                  <span class="service-slide-name">ALL-IN-ONE DASHBOARD</span>
+                  <span class="service-slide-desc">Sales · Leads · Clients · Consumers</span>
+                </div>
+              </div>
+            </div>
+            <div class="service-carousel-dots" aria-hidden="true"></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="home-who section" aria-label="Who we are">
+      <div class="home-who-shell reveal">
+        <div class="home-who-top">
+          <div class="home-who-intro">
+            <p class="home-who-eyebrow"><span aria-hidden="true">+</span> <span data-i18n="home.who.eyebrow">Who we are</span></p>
+            <span class="home-who-quote-mark" aria-hidden="true">“</span>
+            <blockquote class="home-who-quote" data-i18n="home.who.quote">We build websites, landing pages and SaaS products that perform — combining strategy, design and engineering so your business grows online.</blockquote>
+            <div class="home-who-founder-mini">
+              <img src="public%20/images/founders/alizay-ayesha.png" alt="" data-i18n-alt="founders.alizay.alt" />
+              <div>
+                <strong data-i18n="home.who.founderName">Alizay Ayesha</strong>
+                <span data-i18n="home.who.founderRole">Co-Founder & CEO, Vyzion Systems</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="home-who-headline">
+            <h2>
+              <span data-i18n="home.who.headline">Your partner in</span>
+              <strong data-i18n="home.who.headlineEmphasis">digital growth</strong>
+            </h2>
+            <div class="home-who-ribbon" aria-label="Partner brands">
+              <div class="home-who-ribbon-track">
+                <div class="home-who-ribbon-group">
+                  <span>Predict</span>
+                  <span>CHARMANT</span>
+                  <span>Payble</span>
+                  <span>Pepper</span>
+                  <span>+XZERO</span>
+                </div>
+                <div class="home-who-ribbon-group" aria-hidden="true">
+                  <span>Predict</span>
+                  <span>CHARMANT</span>
+                  <span>Payble</span>
+                  <span>Pepper</span>
+                  <span>+XZERO</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="home-who-lead">
+            <p data-i18n="home.who.lead">From your first landing page to custom software, we help businesses launch, convert and scale with confidence.</p>
+            <span class="home-who-studio-label" data-i18n="home.who.studioLabel">The team behind Vyzion</span>
+            <a class="home-who-studio-btn" href="#founders">
+              <span data-i18n="home.who.studioCta">Meet our founders</span>
+              <span class="home-who-studio-dots" aria-hidden="true"><i></i><i></i><i></i></span>
+            </a>
+          </div>
+        </div>
+
+        <div class="home-who-stats reveal delay-1">
+          <article class="home-stat-card">
+            <span class="home-stat-pills" aria-hidden="true"><i></i><i></i><i></i></span>
+            <span class="home-stat-label" data-i18n="about.stat1.label">Conversions</span>
+            <strong class="home-stat-value" data-i18n="about.stat1.value">7,000+</strong>
+            <p class="home-stat-desc" data-i18n="about.stat1.desc">Campaigns and experiences built to convert at scale.</p>
+          </article>
+          <article class="home-stat-card">
+            <span class="home-stat-pills" aria-hidden="true"><i></i><i></i><i></i></span>
+            <span class="home-stat-label" data-i18n="about.stat2.label">In Business Since</span>
+            <strong class="home-stat-value" data-i18n="about.stat2.value">2024</strong>
+            <p class="home-stat-desc" data-i18n="about.stat2.desc">Founded with a focus on growth, design and innovation.</p>
+          </article>
+          <article class="home-stat-card">
+            <span class="home-stat-pills" aria-hidden="true"><i></i><i></i><i></i></span>
+            <span class="home-stat-label" data-i18n="about.stat3.label">Partnered Brands</span>
+            <strong class="home-stat-value" data-i18n="about.stat3.value">30+</strong>
+            <p class="home-stat-desc" data-i18n="about.stat3.desc">Brands that trust us to deliver measurable results.</p>
+          </article>
+          <article class="home-stat-card">
+            <span class="home-stat-pills" aria-hidden="true"><i></i><i></i><i></i></span>
+            <span class="home-stat-label" data-i18n="about.stat4.label">Global Impressions Generated Annually</span>
+            <strong class="home-stat-value" data-i18n="about.stat4.value">100M+</strong>
+            <p class="home-stat-desc" data-i18n="about.stat4.desc">Reach generated across digital channels every year.</p>
+          </article>
         </div>
       </div>
     </section>
 
-    <section class="about-panel section" id="about">
-      <div class="glass-panel reveal">
-        <div class="about-copy">
-          <div class="eyebrow small" data-i18n="about.eyebrow">Sobre nós</div>
-          <h2><span data-i18n="about.title">Tecnologia e criatividade a serviço do seu</span> <strong><span data-i18n="about.titleEmphasis">sucesso.</span></strong></h2>
-          <p data-i18n="about.p1">A Vyzion Systems nasceu para unir design estratégico, tecnologia e performance em soluções digitais que impulsionam negócios no mundo online.</p>
-          <p data-i18n="about.p2">Cada projeto é feito sob medida para transmitir credibilidade, engajar visitantes e gerar resultados.</p>
-          <a class="btn btn-outline" href="#services"><span data-i18n="about.cta">Conheça nossas soluções</span> <span>↗</span></a>
+    <section class="founders section home-founders" id="founders">
+      <div class="founders-header reveal">
+        <div class="founders-heading">
+          <div class="founders-eyebrow">
+            <span class="founders-pill" aria-hidden="true"></span>
+            <span data-i18n="founders.eyebrow">Founders</span>
+          </div>
+          <h2 data-i18n="founders.title">Meet the Founders</h2>
         </div>
-        <div class="about-symbol">
-          <img class="symbol-overlay" src="./assets/logo1.png" data-i18n-alt="about.symbolAlt" alt="Símbolo Vyzion" width="600px"/>
-          <img class="chrome-emblem" src="assets/crome.png" data-i18n-alt="about.chromeAlt" alt="Elemento cromado abstrato" />
-          <div class="digital-grid"></div>
-        </div>
+        <p class="founders-intro" data-i18n="founders.intro">Unlock the potential of your business with marketing strategies and solutions that drive growth, innovation, and success.</p>
       </div>
+      <div class="founders-grid reveal delay-1">
+        <article class="founder-card">
+          <div class="founder-card-inner">
+            <div class="founder-face founder-front">
+              <img src="public%20/images/founders/alizay-ayesha.png" data-i18n-alt="founders.alizay.alt" alt="Alizay Ayesha" />
+              <div class="founder-front-meta">
+                <h3 data-i18n="founders.alizay.name">Alizay Ayesha</h3>
+                <p data-i18n="founders.role.alizay">Co-Founder & CEO</p>
+              </div>
+              <button class="founder-flip-btn" type="button" aria-label="View Alizay Ayesha bio" data-founder-flip>+</button>
+            </div>
+            <div class="founder-face founder-back">
+              <div class="founder-back-grid" aria-hidden="true"></div>
+              <div class="founder-back-content">
+                <h3 data-i18n="founders.alizay.name">Alizay Ayesha</h3>
+                <p class="founder-role" data-i18n="founders.role.alizay">Co-Founder & CEO</p>
+                <p class="founder-bio" data-i18n="founders.alizay.bio">A visionary leader driving marketing strategy, brand growth and client success, building digital experiences that help businesses scale with confidence.</p>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="founder-card">
+          <div class="founder-card-inner">
+            <div class="founder-face founder-front">
+              <img src="public%20/images/founders/caio-vinicius.jpg" data-i18n-alt="founders.caio.alt" alt="Caio Vinicius A. Faguette" />
+              <div class="founder-front-meta">
+                <h3 data-i18n="founders.caio.name">Caio Vinicius A. Faguette</h3>
+                <p data-i18n="founders.role.caio">Co-Founder & CEO</p>
+              </div>
+              <button class="founder-flip-btn" type="button" aria-label="View Caio Vinicius bio" data-founder-flip>+</button>
+            </div>
+            <div class="founder-face founder-back">
+              <div class="founder-back-grid" aria-hidden="true"></div>
+              <div class="founder-back-content">
+                <h3 data-i18n="founders.caio.name">Caio Vinicius A. Faguette</h3>
+                <p class="founder-role" data-i18n="founders.role.caio">Co-Founder & CEO</p>
+                <p class="founder-bio" data-i18n="founders.caio.bio">A technology-driven founder focused on SaaS, custom software and high-performance digital products that turn ambitious ideas into scalable business solutions.</p>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+      <p class="founders-more reveal delay-2"><a href="about.html#founders" data-i18n="founders.more">Learn more about our story →</a></p>
     </section>
 
     <section class="services section" id="services">
@@ -95,27 +346,59 @@
         <h2 data-i18n="services.title">Soluções digitais que colocam sua empresa em outro nível.</h2>
       </div>
 
-      <div class="service-grid">
-        <article class="service-card reveal">
-          <div class="service-icon">▱</div>
-          <h3 data-i18n="service.1.title">Sites Institucionais</h3>
-          <p data-i18n="service.1.text">Sites profissionais que comunicam autoridade, fortalecem sua marca e criam confiança.</p>
-        </article>
-        <article class="service-card reveal delay-1">
+      <div class="services-carousel reveal" aria-label="Services">
+        <button class="services-carousel-btn prev" type="button" aria-label="Previous services">‹</button>
+        <div class="services-carousel-viewport">
+          <div class="services-carousel-track">
+        <article class="service-card">
           <div class="service-icon">▤</div>
-          <h3 data-i18n="service.2.title">Landing Pages</h3>
-          <p data-i18n="service.2.text">Páginas estratégicas para campanhas, captação de leads e conversão de visitantes.</p>
+          <h3 data-i18n="service.1.title">Landing Pages</h3>
+          <p data-i18n="service.1.text">Conversion-focused landing pages engineered for campaigns, lead generation and measurable growth.</p>
         </article>
-        <article class="service-card reveal delay-2">
+        <article class="service-card">
+          <div class="service-icon">▴</div>
+          <h3 data-i18n="service.9.title">Top Notch Global Technical Ranking</h3>
+          <p data-i18n="service.9.text">Enterprise-grade technical audits and global ranking strategies to maximize visibility, performance and competitive advantage.</p>
+        </article>
+        <article class="service-card">
           <div class="service-icon">ϟ</div>
-          <h3 data-i18n="service.3.title">Alta Performance</h3>
-          <p data-i18n="service.3.text">Projetos rápidos, responsivos, otimizados e preparados para uma experiência fluida.</p>
+          <h3 data-i18n="service.2.title">Performance Engineering</h3>
+          <p data-i18n="service.2.text">High-speed, responsive and optimized builds designed for seamless user experiences at scale.</p>
         </article>
-        <article class="service-card reveal delay-3">
+        <article class="service-card">
+          <div class="service-icon">◈</div>
+          <h3 data-i18n="service.3.title">UI/UX Modernization</h3>
+          <p data-i18n="service.3.text">Premium interface upgrades that elevate usability, clarity and brand perception across every touchpoint.</p>
+        </article>
+        <article class="service-card">
+          <div class="service-icon">⊞</div>
+          <h3 data-i18n="service.4.title">Bespoke Interface Design</h3>
+          <p data-i18n="service.4.text">Custom UI refinements tailored to your brand identity, user journeys and product goals.</p>
+        </article>
+        <article class="service-card">
+          <div class="service-icon">☁</div>
+          <h3 data-i18n="service.5.title">Custom SaaS Solutions</h3>
+          <p data-i18n="service.5.text">Scalable SaaS platforms architected and delivered to match your business model and growth roadmap.</p>
+        </article>
+        <article class="service-card">
           <div class="service-icon">&lt;/&gt;</div>
-          <h3 data-i18n="service.4.title">Desenvolvimento Personalizado</h3>
-          <p data-i18n="service.4.text">Soluções sob medida para atender necessidades específicas do seu negócio.</p>
+          <h3 data-i18n="service.6.title">Bespoke Software Development</h3>
+          <p data-i18n="service.6.text">End-to-end custom software built to solve complex business challenges with precision and reliability.</p>
         </article>
+        <article class="service-card">
+          <div class="service-icon">◆</div>
+          <h3 data-i18n="service.7.title">Marketing Creative Suite</h3>
+          <p data-i18n="service.7.text">Professional graphic packages crafted for campaigns, advertising and high-impact brand communication.</p>
+        </article>
+        <article class="service-card">
+          <div class="service-icon">◎</div>
+          <h3 data-i18n="service.8.title">Dedicated Technical Support</h3>
+          <p data-i18n="service.8.text">Proactive technical support to keep your platforms secure, stable and running at peak performance.</p>
+        </article>
+          </div>
+        </div>
+        <button class="services-carousel-btn next" type="button" aria-label="Next services">›</button>
+        <div class="services-carousel-dots" aria-hidden="true"></div>
       </div>
     </section>
 
@@ -128,39 +411,151 @@
       </div>
       <div class="portfolio-track reveal delay-1">
         <article class="work-card">
-          <img src="assets/site.png" data-i18n-alt="portfolio.item1Alt" alt="Projeto de landing page Vyzion" />
-          <h3 data-i18n="portfolio.project1.title">Presença Digital</h3>
-          <p data-i18n="portfolio.project1.type">Landing Page</p>
+          <img src="public%20/images/portfolio/voxly.png" data-i18n-alt="portfolio.item1Alt" alt="Voxly AI language app landing page" />
+          <h3 data-i18n="portfolio.project1.title">Voxly</h3>
+          <p data-i18n="portfolio.project1.type">AI Product Landing Page</p>
         </article>
         <article class="work-card featured">
-          <img src="assets/crm/login_crm.png" data-i18n-alt="portfolio.item2Alt" alt="Projeto web Vyzion" />
-          <h3 data-i18n="portfolio.project2.title">Vyzion CRM</h3>
-          <p data-i18n="portfolio.project2.type">CRMs feito sob medida</p>
+          <img src="public%20/images/portfolio/saas-platform.png" data-i18n-alt="portfolio.item2Alt" alt="Modern SaaS platform website" />
+          <h3 data-i18n="portfolio.project2.title">SaaS Platform</h3>
+          <p data-i18n="portfolio.project2.type">Modern Web Application</p>
         </article>
         <article class="work-card">
-          <img src="assets/banner1.jpeg" data-i18n-alt="portfolio.item3Alt" alt="Identidade Vyzion Systems" />
-          <h3 data-i18n="portfolio.project3.title">Marca Digital</h3>
-          <p data-i18n="portfolio.project3.type">Identidade Web</p>
+          <img src="public%20/images/portfolio/brand-growth.png" data-i18n-alt="portfolio.item3Alt" alt="Brand and business growth website" />
+          <h3 data-i18n="portfolio.project3.title">Brand & Growth</h3>
+          <p data-i18n="portfolio.project3.type">Business Website Design</p>
         </article>
       </div>
     </section>
 
     <section class="process section" id="process">
-      <div class="section-heading reveal">
-        <div class="eyebrow center" data-i18n="process.eyebrow">Nosso processo</div>
+      <div class="process-header reveal">
+        <div class="eyebrow center" data-i18n="process.eyebrow">Our process</div>
+        <h2><span data-i18n="process.title">A clear workflow with</span> <strong data-i18n="process.titleEmphasis">professional deliverables</strong></h2>
+        <p class="process-lead" data-i18n="process.lead">Every project follows a structured path — with the tools and documents your team needs from day one.</p>
       </div>
-      <div class="timeline">
-        <article class="step reveal"><span>01</span><h3 data-i18n="process.step1.title">Descobrir</h3><p data-i18n="process.step1.text">Entendemos seu negócio, objetivos e público-alvo.</p></article>
-        <article class="step reveal delay-1"><span>02</span><h3 data-i18n="process.step2.title">Planejar</h3><p data-i18n="process.step2.text">Criamos estratégia, estrutura e roteiro do projeto.</p></article>
-        <article class="step reveal delay-2"><span>03</span><h3 data-i18n="process.step3.title">Design & UX</h3><p data-i18n="process.step3.text">Desenvolvemos o design focado em experiência e conversão.</p></article>
-        <article class="step reveal delay-3"><span>04</span><h3 data-i18n="process.step4.title">Desenvolver</h3><p data-i18n="process.step4.text">Transformamos o projeto em um site rápido e responsivo.</p></article>
-        <article class="step reveal delay-4"><span>05</span><h3 data-i18n="process.step5.title">Entregar</h3><p data-i18n="process.step5.text">Testamos, otimizamos e entregamos com excelência.</p></article>
+
+      <div class="process-layout reveal delay-1">
+        <div class="process-glass-graph">
+          <p class="process-graph-label" data-i18n="process.graphLabel">Workflow overview</p>
+          <svg class="process-graph-svg" viewBox="0 0 520 220" aria-hidden="true">
+            <defs>
+              <linearGradient id="processLineGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" stop-color="#00b7ff" stop-opacity="0.2" />
+                <stop offset="50%" stop-color="#35d8ff" stop-opacity="1" />
+                <stop offset="100%" stop-color="#00b7ff" stop-opacity="0.2" />
+              </linearGradient>
+              <linearGradient id="processAreaGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+                <stop offset="0%" stop-color="#00b7ff" stop-opacity="0.22" />
+                <stop offset="100%" stop-color="#00b7ff" stop-opacity="0" />
+              </linearGradient>
+            </defs>
+            <path class="process-graph-area" d="M40,155 L130,118 L220,132 L310,78 L400,98 L480,52 L480,200 L40,200 Z" />
+            <path class="process-graph-line" d="M40,155 L130,118 L220,132 L310,78 L400,98 L480,52" />
+            <g class="process-graph-node">
+              <circle cx="40" cy="155" r="14" /><text class="node-num" x="40" y="159" text-anchor="middle">01</text>
+              <circle cx="130" cy="118" r="14" /><text class="node-num" x="130" y="122" text-anchor="middle">02</text>
+              <circle cx="220" cy="132" r="14" /><text class="node-num" x="220" y="136" text-anchor="middle">03</text>
+              <circle cx="310" cy="78" r="14" /><text class="node-num" x="310" y="82" text-anchor="middle">04</text>
+              <circle cx="400" cy="98" r="14" /><text class="node-num" x="400" y="102" text-anchor="middle">05</text>
+            </g>
+          </svg>
+          <div class="process-graph-legend">
+            <div class="process-graph-step">
+              <strong data-i18n="process.step1.title">Discover</strong>
+              <span data-i18n="process.step1.text">Business, goals and audience.</span>
+            </div>
+            <div class="process-graph-step">
+              <strong data-i18n="process.step2.title">Plan</strong>
+              <span data-i18n="process.step2.text">Strategy and roadmap.</span>
+            </div>
+            <div class="process-graph-step">
+              <strong data-i18n="process.step3.title">Design & UX</strong>
+              <span data-i18n="process.step3.text">Experience and conversion.</span>
+            </div>
+            <div class="process-graph-step">
+              <strong data-i18n="process.step4.title">Build</strong>
+              <span data-i18n="process.step4.text">Fast, responsive delivery.</span>
+            </div>
+            <div class="process-graph-step">
+              <strong data-i18n="process.step5.title">Deliver</strong>
+              <span data-i18n="process.step5.text">Test, optimize, launch.</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="process-deliverables">
+          <article class="process-deliverable">
+            <div class="process-deliverable-preview preview-sheets">
+              <div class="preview-sheets-toolbar"><i></i><i></i><i></i></div>
+              <div class="preview-sheets-grid">
+                <span class="idx"></span><span class="head">Task</span><span class="head">Owner</span><span class="head">Status</span>
+                <span class="idx">1</span><span>Discovery brief</span><span>Client</span><span>Done</span>
+                <span class="idx">2</span><span>Sprint plan</span><span>Vyzion</span><span>Active</span>
+                <span class="idx">3</span><span>KPI tracker</span><span>Shared</span><span>Live</span>
+              </div>
+            </div>
+            <div class="process-deliverable-meta">
+              <h3 data-i18n="process.sheets.title">Google Sheets</h3>
+              <p data-i18n="process.sheets.desc">Live project records, timelines and KPI tracking.</p>
+            </div>
+          </article>
+
+          <article class="process-deliverable">
+            <div class="process-deliverable-preview preview-miro">
+              <div class="preview-miro-board">
+                <div class="preview-miro-note yellow">UX Flow</div>
+                <div class="preview-miro-note blue">Wireframe</div>
+                <div class="preview-miro-note pink">Ideas</div>
+              </div>
+            </div>
+            <div class="process-deliverable-meta">
+              <h3 data-i18n="process.miro.title">Miro Board</h3>
+              <p data-i18n="process.miro.desc">Collaborative workshops, flows and wireframes.</p>
+            </div>
+          </article>
+
+          <article class="process-deliverable">
+            <div class="process-deliverable-preview preview-notion">
+              <div class="preview-notion-page">
+                <div class="preview-notion-title"></div>
+                <div class="preview-notion-line"></div>
+                <div class="preview-notion-line"></div>
+                <div class="preview-notion-line"></div>
+                <div class="preview-notion-check" data-i18n="process.notion.preview">Project wiki & handoff docs</div>
+              </div>
+            </div>
+            <div class="process-deliverable-meta">
+              <h3 data-i18n="process.notion.title">Notion</h3>
+              <p data-i18n="process.notion.desc">Central hub for docs, tasks and client updates.</p>
+            </div>
+          </article>
+
+          <article class="process-deliverable">
+            <div class="process-deliverable-preview preview-contract">
+              <div class="preview-contract-doc">
+                <div class="preview-contract-badge">PDF</div>
+                <div class="preview-contract-line"></div>
+                <div class="preview-contract-line mid"></div>
+                <div class="preview-contract-line short"></div>
+                <div class="preview-contract-sign">
+                  <span data-i18n="process.contract.sign">Client signature</span>
+                  <em>Signature</em>
+                </div>
+              </div>
+            </div>
+            <div class="process-deliverable-meta">
+              <h3 data-i18n="process.contract.title">Contract PDF</h3>
+              <p data-i18n="process.contract.desc">Scope, terms and agreement provided to every client.</p>
+            </div>
+          </article>
+        </div>
       </div>
     </section>
 
     <section class="contact section" id="contact">
       <div class="contact-panel reveal">
-        <img src="assets/silerlogo1.png" data-i18n-alt="contact.imageAlt" alt="Mão robótica" />
+        <img src="public%20/images/brand/silerlogo1.png" data-i18n-alt="contact.imageAlt" alt="Mão robótica" />
         <div class="contact-copy">
           <h2><span data-i18n="contact.title">Vamos conversar sobre o seu</span> <strong><span data-i18n="contact.titleEmphasis">próximo projeto?</span></strong></h2>
           <p data-i18n="contact.text">Fale com nossos especialistas e descubra como podemos elevar sua presença digital.</p>
@@ -171,16 +566,114 @@
         </div>
       </div>
     </section>
+
+    <section class="home-insights section" id="insights" aria-labelledby="insights-heading">
+      <div class="home-insights-shell">
+        <header class="home-insights-header reveal">
+          <p class="home-insights-eyebrow">
+            <span class="spark" aria-hidden="true">✦</span>
+            <span data-i18n="insights.eyebrow">Insights</span>
+          </p>
+          <div class="home-insights-title-wrap">
+            <h2 id="insights-heading">
+              <span data-i18n="insights.title">Guides to</span><br />
+              <span data-i18n="insights.titleEmphasis">digital growth</span>
+            </h2>
+          </div>
+          <p class="home-insights-lead" data-i18n="insights.lead">Practical articles from the Vyzion team on websites, landing pages, SEO, performance and SaaS — helping your business get found, convert and scale.</p>
+        </header>
+
+        <div class="home-insights-columns reveal delay-1">
+          <article class="home-insights-col" itemscope itemtype="https://schema.org/Article">
+            <a href="blog.html" itemprop="url">
+              <div class="home-insights-media home-insights-media--tall">
+                <img src="public%20/images/portfolio/saas-platform.png" alt="" data-i18n-alt="insights.a1.imageAlt" itemprop="image" loading="lazy" />
+              </div>
+              <time class="home-insights-date" datetime="2026-03-01" itemprop="datePublished" data-i18n="insights.a1.date">Mar 1, 2026</time>
+              <h3 itemprop="headline" data-i18n="insights.a1.title">Why site speed matters for SEO and sales</h3>
+              <p class="home-insights-excerpt" itemprop="description" data-i18n="insights.a1.excerpt">Slow pages lose rankings and customers. How Vyzion optimizes performance, Core Web Vitals and mobile UX to drive more conversions.</p>
+              <span class="home-insights-more">
+                <span data-i18n="insights.readMore">Read article</span>
+                <span class="home-insights-dots" aria-hidden="true"><i></i><i></i><i></i></span>
+              </span>
+            </a>
+          </article>
+
+          <article class="home-insights-col" itemscope itemtype="https://schema.org/Article">
+            <a href="blog.html" itemprop="url">
+              <div class="home-insights-media home-insights-media--square">
+                <img src="public%20/images/portfolio/voxly.png" alt="" data-i18n-alt="insights.a2.imageAlt" itemprop="image" loading="lazy" />
+              </div>
+              <time class="home-insights-date" datetime="2026-02-08" itemprop="datePublished" data-i18n="insights.a2.date">Feb 8, 2026</time>
+              <h3 itemprop="headline" data-i18n="insights.a2.title">How a professional website generates more leads and trust</h3>
+              <p class="home-insights-excerpt" itemprop="description" data-i18n="insights.a2.excerpt">Strategic design, clear UX and well-placed CTAs turn visitors into opportunities — what we deliver on every Vyzion project.</p>
+              <span class="home-insights-more">
+                <span data-i18n="insights.readMore">Read article</span>
+                <span class="home-insights-dots" aria-hidden="true"><i></i><i></i><i></i></span>
+              </span>
+            </a>
+          </article>
+
+          <article class="home-insights-col" itemscope itemtype="https://schema.org/Article">
+            <a href="blog.html" itemprop="url">
+              <div class="home-insights-media home-insights-media--tall">
+                <img src="public%20/images/portfolio/brand-growth.png" alt="" data-i18n-alt="insights.a3.imageAlt" itemprop="image" loading="lazy" />
+              </div>
+              <time class="home-insights-date" datetime="2026-01-21" itemprop="datePublished" data-i18n="insights.a3.date">Jan 21, 2026</time>
+              <h3 itemprop="headline" data-i18n="insights.a3.title">What to prioritize in your digital stack in 2026</h3>
+              <p class="home-insights-excerpt" itemprop="description" data-i18n="insights.a3.excerpt">Technical SEO, marketing automation and custom software: what growing businesses need to invest in now to compete online.</p>
+              <span class="home-insights-more">
+                <span data-i18n="insights.readMore">Read article</span>
+                <span class="home-insights-dots" aria-hidden="true"><i></i><i></i><i></i></span>
+              </span>
+            </a>
+          </article>
+
+          <article class="home-insights-col" itemscope itemtype="https://schema.org/Article">
+            <a href="blog.html" itemprop="url">
+              <div class="home-insights-media home-insights-media--wide">
+                <img src="public%20/images/brand/site.png" alt="" data-i18n-alt="insights.a4.imageAlt" itemprop="image" loading="lazy" />
+              </div>
+              <time class="home-insights-date" datetime="2025-12-10" itemprop="datePublished" data-i18n="insights.a4.date">Dec 10, 2025</time>
+              <h3 itemprop="headline" data-i18n="insights.a4.title">How Vyzion delivers projects: from brief to launch</h3>
+              <p class="home-insights-excerpt" itemprop="description" data-i18n="insights.a4.excerpt">Our four-step process — discover, design, build and launch — with clear deliverables for websites, campaigns and digital products.</p>
+              <span class="home-insights-more">
+                <span data-i18n="insights.readMore">Read article</span>
+                <span class="home-insights-dots" aria-hidden="true"><i></i><i></i><i></i></span>
+              </span>
+            </a>
+          </article>
+        </div>
+
+        <aside class="home-newsletter reveal delay-2" aria-labelledby="newsletter-heading">
+          <div class="home-newsletter-inner">
+            <div class="home-newsletter-copy">
+              <h3 id="newsletter-heading" data-i18n="newsletter.title">Get growth insights in your inbox</h3>
+              <p data-i18n="newsletter.lead">Monthly articles from Vyzion on SEO, web performance and SaaS — written to help your business rank and convert.</p>
+            </div>
+            <form class="home-newsletter-form" id="newsletter-form" action="#" method="post" novalidate>
+              <div class="home-newsletter-field">
+                <label class="visually-hidden" for="newsletter-email" data-i18n="newsletter.emailLabel">Email address</label>
+                <input type="email" id="newsletter-email" name="email" autocomplete="email" required data-i18n-placeholder="newsletter.emailPlaceholder" placeholder="you@company.com" />
+                <button type="submit" class="btn btn-outline"><span data-i18n="newsletter.cta">Subscribe</span> <span aria-hidden="true">↗</span></button>
+              </div>
+              <p class="home-newsletter-note" data-i18n="newsletter.privacy">No spam. Unsubscribe anytime.</p>
+              <p class="home-newsletter-success" role="status" data-i18n="newsletter.success">You're subscribed — check your inbox for the latest insights from Vyzion Systems.</p>
+            </form>
+          </div>
+        </aside>
+      </div>
+    </section>
   </main>
 
-  <footer class="footer">
-    <img src="assets/logo1.png" alt="Vyzion Systems" />
-    <nav>
-      <a href="#home" data-i18n="nav.home">Início</a><a href="#about" data-i18n="nav.about">Sobre</a><a href="#services" data-i18n="nav.services">Serviços</a><a href="#portfolio" data-i18n="nav.portfolio">Portfólio</a><a href="#contact" data-i18n="nav.contact">Contato</a>
-    </nav>
-    <p data-i18n="footer.rights">© 2026 Vyzion Systems. Todos os direitos reservados.</p>
-  </footer>
+  <div id="site-footer-mount"></div>
+  <div id="site-widgets-mount"></div>
 
+  <script src="js/site-config.js"></script>
+  <script src="js/i18n/config.js"></script>
+  <script src="js/i18n/translations.js"></script>
+  <script src="js/i18n/engine.js"></script>
   <script src="js/script.js"></script>
+  <script src="js/site-ui.js"></script>
 </body>
 </html>

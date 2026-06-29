@@ -1,0 +1,285 @@
+/* About — What we do + Process steps */
+.about-what {
+  padding: 48px 3.8% 24px;
+}
+
+.about-what-inner {
+  max-width: 1180px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.about-what-inner .eyebrow {
+  margin-bottom: 18px;
+}
+
+.about-what-inner h2 {
+  margin: 0 0 14px;
+  font-size: clamp(30px, 3.5vw, 44px);
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+  text-transform: none;
+  color: #f4f4f5;
+}
+
+.about-what-inner p {
+  margin: 0 auto;
+  max-width: 640px;
+  font-size: 16px;
+  line-height: 1.65;
+  color: #a1a1aa;
+}
+
+.about-process {
+  padding: 24px 3.8% 80px;
+}
+
+.about-process-shell {
+  max-width: 1180px;
+  margin: 0 auto;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 4px;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.02), transparent),
+    rgba(8, 12, 18, 0.45);
+  overflow: hidden;
+}
+
+.about-process-header {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(260px, 0.55fr);
+  gap: 32px;
+  align-items: end;
+  padding: 36px 34px 32px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.about-process-eyebrow {
+  grid-column: 1 / -1;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 4px;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #a1a1aa;
+}
+
+.about-process-eyebrow .arrow {
+  color: var(--blue, #00b7ff);
+}
+
+.about-process-header h2 {
+  margin: 0;
+  font-size: clamp(30px, 3.6vw, 48px);
+  line-height: 1.06;
+  letter-spacing: -0.04em;
+  font-weight: 700;
+  text-transform: none;
+  color: #f4f4f5;
+}
+
+.about-process-header h2 strong {
+  font-weight: 800;
+  color: #fff;
+  background: none;
+  -webkit-text-fill-color: #fff;
+}
+
+.about-process-lead {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.65;
+  color: #a1a1aa;
+}
+
+.about-process-steps {
+  display: flex;
+  flex-direction: column;
+}
+
+.about-process-step {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 28px;
+  padding: 28px 34px 30px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.about-process-step:last-of-type {
+  border-bottom: none;
+}
+
+.about-process-step-top {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 16px 20px;
+  align-items: center;
+}
+
+.about-process-num {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  color: #fff;
+  white-space: nowrap;
+}
+
+.about-process-step-top h3 {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 700;
+  text-transform: none;
+  color: #fff;
+}
+
+.about-process-bar {
+  grid-column: 1 / -1;
+  display: flex;
+  height: 32px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 2px;
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.about-process-bar-fill {
+  flex-shrink: 0;
+  background: #fff;
+}
+
+.about-process-bar-stripes {
+  flex: 1;
+  background: repeating-linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.06) 0,
+    rgba(255, 255, 255, 0.06) 1px,
+    transparent 1px,
+    transparent 5px
+  );
+}
+
+.about-process-step[data-progress="25"] .about-process-bar-fill { width: 25%; }
+.about-process-step[data-progress="50"] .about-process-bar-fill { width: 50%; }
+.about-process-step[data-progress="75"] .about-process-bar-fill { width: 75%; }
+.about-process-step[data-progress="100"] .about-process-bar-fill { width: 100%; }
+
+.about-process-desc {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.65;
+  color: #d4d4d8;
+}
+
+.about-process-outcome {
+  padding-left: 24px;
+  border-left: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.about-process-outcome-label {
+  display: block;
+  margin-bottom: 8px;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 10px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #71717a;
+}
+
+.about-process-outcome p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #a1a1aa;
+}
+
+.about-process-footer {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 28px;
+  padding: 22px 34px 28px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(0, 0, 0, 0.15);
+}
+
+.about-process-footer-note {
+  grid-column: 1 / -1;
+  margin-bottom: 4px;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 10px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #71717a;
+}
+
+.about-process-footer-col {
+  padding-right: 12px;
+}
+
+.about-process-footer-col:not(:last-child) {
+  border-right: 1px solid rgba(255, 255, 255, 0.08);
+  padding-right: 28px;
+}
+
+.about-process-footer h4 {
+  margin: 0;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: none;
+  color: #e4e4e7;
+}
+
+.about-process-footer-col p {
+  margin: 10px 0 0;
+  font-size: 14px;
+  line-height: 1.65;
+  color: #a1a1aa;
+}
+
+@media (max-width: 900px) {
+  .about-process-header {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .about-process-step {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .about-process-outcome {
+    padding-left: 0;
+    border-left: none;
+    padding-top: 4px;
+  }
+
+  .about-process-footer {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .about-process-footer-col:not(:last-child) {
+    border-right: none;
+    padding-right: 0;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  }
+}
+
+@media (max-width: 680px) {
+  .about-what,
+  .about-process {
+    padding-left: 22px;
+    padding-right: 22px;
+  }
+
+  .about-process-header,
+  .about-process-step,
+  .about-process-footer {
+    padding-left: 22px;
+    padding-right: 22px;
+  }
+}

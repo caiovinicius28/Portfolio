@@ -134,14 +134,15 @@ h1{font-size:clamp(43px,5.4vw,88px);line-height:.96;letter-spacing:-.055em;text-
 /* Hero inspired by the supplied Vyzion template */
 .site-header{
   padding:24px 3.8%;
-  background:linear-gradient(180deg,rgba(2,7,13,.78),rgba(2,7,13,0));
+  background:transparent;
   backdrop-filter:none;
 }
 .site-header.scrolled{
   padding-top:17px;
   padding-bottom:17px;
-  background:rgba(2,7,13,.86);
-  backdrop-filter:blur(18px);
+  background:transparent;
+  backdrop-filter:none;
+  border:none;
 }
 #logotopper{gap:10px}
 .brand img{
@@ -169,13 +170,33 @@ h1{font-size:clamp(43px,5.4vw,88px);line-height:.96;letter-spacing:-.055em;text-
   text-transform:none;
   letter-spacing:0;
 }
-.language-switcher{gap:5px}
-.lang-btn{
-  min-width:32px;
-  padding:8px;
-  border-color:transparent;
-  background:transparent;
+html.i18n-loading body {
+  opacity: 0;
 }
+
+html.i18n-ready body {
+  opacity: 1;
+  transition: opacity 0.2s ease;
+}
+
+html[dir="rtl"] .header-pill,
+html[dir="rtl"] .nav-menu,
+html[dir="rtl"] .founders-header,
+html[dir="rtl"] .empower-header,
+html[dir="rtl"] .about-hero-split {
+  direction: rtl;
+}
+
+html[dir="rtl"] .founder-flip-btn {
+  right: auto;
+  left: 24px;
+}
+
+html[dir="rtl"] .founder-front-meta {
+  left: 80px;
+  right: 28px;
+}
+
 .hero{
   isolation:isolate;
   min-height:100svh;
@@ -185,7 +206,7 @@ h1{font-size:clamp(43px,5.4vw,88px);line-height:.96;letter-spacing:-.055em;text-
   background-image:
     linear-gradient(90deg,rgba(2,7,13,.98) 0%,rgba(2,7,13,.83) 31%,rgba(2,7,13,.15) 57%,rgba(2,7,13,.04) 100%),
     linear-gradient(0deg,rgba(2,7,13,.82) 0%,transparent 23%),
-    url("../assets/background.png");
+    url("../public%20/images/brand/background.png");
   background-size:cover;
   background-position:center;
   overflow:hidden;
@@ -305,7 +326,7 @@ h1{font-size:clamp(43px,5.4vw,88px);line-height:.96;letter-spacing:-.055em;text-
     padding:390px 5% 180px;
     background-image:
       linear-gradient(0deg,rgba(2,7,13,.99) 0%,rgba(2,7,13,.91) 44%,rgba(2,7,13,.08) 75%),
-      url("../assets/background.png");
+      url("../public%20/images/brand/background.png");
     background-size:auto 100%,auto 100%;
     background-position:center,65% center;
   }
@@ -324,8 +345,8 @@ h1{font-size:clamp(43px,5.4vw,88px);line-height:.96;letter-spacing:-.055em;text-
 @media(max-width:780px){
   .site-header{
     padding:15px 20px;
-    background:rgba(2,7,13,.72);
-    backdrop-filter:blur(12px);
+    background:transparent;
+    backdrop-filter:none;
   }
   .brand img{width:38px;height:34px}
   .brand h2{display:block;font-size:15px}
