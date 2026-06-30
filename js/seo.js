@@ -36,7 +36,7 @@
     name: site.name || 'Vyzion Systems',
     url: base,
     logo: { '@type': 'ImageObject', url: logo },
-    email: site.email || 'hello@vyzionsystems.com',
+    email: site.email || 'contact@vyzionsystems.com',
     telephone: site.phone || '+55-62-99480-0483',
     sameAs: site.sameAs || [],
     contactPoint: {

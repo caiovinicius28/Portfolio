@@ -1,7 +1,7 @@
 window.VYZION_SITE = {
   url: 'https://vyzionsystems.com',
   name: 'Vyzion Systems',
-  email: 'hello@vyzionsystems.com',
+  email: 'contact@vyzionsystems.com',
   phone: '+55 (62) 99480-0483',
   whatsapp: '5562994800483',
   calendly: 'https://calendly.com/vyzion-systems/free-consultation',

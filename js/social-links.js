@@ -8,7 +8,7 @@
   const LABELS = {
     linkedin: 'LinkedIn',
     instagram: 'Instagram',
-    twitter: 'X (Twitter)'
+    // twitter: 'X (Twitter)'
   };
 
   function renderSocialLinks(links, className) {
