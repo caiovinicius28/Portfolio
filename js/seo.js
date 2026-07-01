@@ -17,6 +17,13 @@
     return window.VYZION_TRANSLATIONS?.en?.[key] || '';
   }
 
+  function blogArticleUrl(article) {
+    if (article.slug) {
+      return `${base}/blog/${encodeURIComponent(article.slug)}.html`;
+    }
+    return `${base}/blog-article.html?id=${article.id}`;
+  }
+
   function breadcrumbs(items) {
     injectJsonLd({
       '@context': 'https://schema.org',
@@ -101,6 +108,16 @@
       description: getEn('about.pageDescription'),
       mainEntity: { '@id': `${base}/#organization` }
     });
+    injectJsonLd({
+      '@context': 'https://schema.org',
+      '@type': 'Organization',
+      '@id': 'https://zarlabs.online/#organization',
+      name: 'Zar Labs',
+      url: 'https://zarlabs.online',
+      description: getEn('ecosystem.teaser'),
+      parentOrganization: { '@id': `${base}/#organization` },
+      knowsAbout: ['Custom SaaS', 'AI automation', 'Enterprise software', 'Digital infrastructure']
+    });
     breadcrumbs([
       { name: 'Home', url: `${base}/` },
       { name: 'About', url: `${base}/about.html` }
@@ -118,6 +135,16 @@
     const articles = window.VYZION_BLOG_ARTICLES || [];
     injectJsonLd({
       '@context': 'https://schema.org',
+      '@type': 'Blog',
+      '@id': `${base}/blog.html#blog`,
+      name: getEn('blog.title') || 'Vyzion Systems Blog',
+      url: `${base}/blog.html`,
+      description: getEn('blog.lead'),
+      publisher: { '@id': `${base}/#organization` },
+      inLanguage: ['en', 'pt-BR']
+    });
+    injectJsonLd({
+      '@context': 'https://schema.org',
       '@type': 'CollectionPage',
       name: getEn('blog.title') || 'Vyzion Systems Blog',
       url: `${base}/blog.html`,
@@ -127,7 +154,7 @@
         itemListElement: articles.map((a, i) => ({
           '@type': 'ListItem',
           position: i + 1,
-          url: `${base}/blog-article.html?id=${a.id}`,
+          url: blogArticleUrl(a),
           name: getEn(a.titleKey)
         }))
       }
@@ -138,34 +165,11 @@
     ]);
   }
 
-  if (page === 'blog-article' && articleId) {
+  if (page === 'blog-article' && articleId && !document.getElementById('vyzion-blog-schema-graph') && !document.body?.dataset?.staticSeo) {
     const article = (window.VYZION_BLOG_ARTICLES || []).find(a => a.id === articleId);
     if (article) {
       const headline = getEn(article.titleKey);
-      const description = getEn(article.excerptKey);
-      const articleUrl = `${base}/blog-article.html?id=${article.id}`;
-
-      injectJsonLd({
-        '@context': 'https://schema.org',
-        '@type': 'BlogPosting',
-        '@id': `${articleUrl}#article`,
-        headline,
-        description,
-        datePublished: article.date,
-        dateModified: article.date,
-        image: `${base}/${article.image.replace(/^\//, '')}`,
-        author: { '@type': 'Organization', name: 'Vyzion Systems', url: base },
-        publisher: {
-          '@type': 'Organization',
-          name: 'Vyzion Systems',
-          logo: { '@type': 'ImageObject', url: logo }
-        },
-        mainEntityOfPage: { '@type': 'WebPage', '@id': articleUrl },
-        url: articleUrl,
-        inLanguage: 'en',
-        articleSection: getEn(article.tagKey),
-        keywords: getEn(article.tagKey)
-      });
+      const articleUrl = blogArticleUrl(article);
 
       breadcrumbs([
         { name: 'Home', url: `${base}/` },

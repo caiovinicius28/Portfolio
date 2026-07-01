@@ -7,7 +7,8 @@
     "dev": "serve . -l 3000",
     "start": "serve . -l 3000",
     "index:submit": "node scripts/submit-indexing.mjs",
-    "index:verify": "node scripts/inject-verification.mjs"
+    "index:verify": "node scripts/inject-verification.mjs",
+    "seo:blog": "node scripts/generate-blog-seo.mjs"
   },
   "devDependencies": {
     "serve": "^14.2.4"

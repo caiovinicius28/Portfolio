@@ -43,8 +43,8 @@
         localStorage.setItem('vyzion-newsletter', JSON.stringify(subs));
       } catch (_) {}
 
-      const success = form.querySelector('.footer-newsletter-success, .home-newsletter-success, .form-success');
-      form.querySelector('.home-newsletter-field, .contact-form-row--actions')?.classList.add('is-hidden');
+      const success = form.querySelector('.footer-newsletter-success, .home-newsletter-success, .vyzion-digest-success, .blog-bar-newsletter-success, .form-success');
+      form.querySelector('.home-newsletter-field, .vyzion-digest-field, .blog-bar-newsletter-field, .contact-form-row--actions')?.classList.add('is-hidden');
       if (success) {
         success.hidden = false;
         success.style.display = 'block';
@@ -54,7 +54,7 @@
   }
 
   function initNewsletterForms() {
-    document.querySelectorAll('.footer-newsletter-form, .home-newsletter-form, #newsletter-form').forEach(bindNewsletterForm);
+    document.querySelectorAll('.footer-newsletter-form, .home-newsletter-form, .vyzion-digest-form, #newsletter-form, #blog-newsletter-form, #blog-bar-newsletter-form').forEach(bindNewsletterForm);
   }
 
   function initContactForm() {
@@ -140,7 +140,10 @@
       addChatMessage(replies[lang], 'bot');
 
       setTimeout(() => {
-        if (action === 'book') window.location.href = 'contact.html#book';
+        if (action === 'book') {
+          const url = site.calendly || 'https://calendly.com/contact-vyzionsystems/30min';
+          window.open(url, '_blank', 'noopener');
+        }
         if (action === 'quote') window.location.href = 'contact.html#project-form';
         if (action === 'services') window.location.href = 'index.html#services';
         if (action === 'whatsapp') window.open(`https://wa.me/${site.whatsapp || '5562994800483'}`, '_blank', 'noopener');
@@ -174,6 +177,27 @@
     });
   }
 
+  function applySiteContactLinks() {
+    const site = window.VYZION_SITE || {};
+
+    document.querySelectorAll('[data-site-email]').forEach(link => {
+      if (!site.email) return;
+      link.href = `mailto:${site.email}`;
+      link.textContent = site.email;
+    });
+
+    document.querySelectorAll('[data-site-calendly]').forEach(link => {
+      if (!site.calendly) return;
+      link.href = site.calendly;
+      link.target = '_blank';
+      link.rel = 'noopener noreferrer';
+    });
+
+    document.querySelectorAll('[data-site-calendly-book]').forEach(link => {
+      link.href = 'contact.html#book';
+    });
+  }
+
   function applyCalendlyUrl() {
     const site = window.VYZION_SITE || {};
     document.querySelectorAll('.calendly-inline-widget').forEach(el => {
@@ -199,11 +223,13 @@
     initCookieBanner();
     initChatbot();
     initFaq();
+    applySiteContactLinks();
     applyCalendlyUrl();
 
     if (window.VyzionI18n?.applyCachedLocaleIfAvailable) {
       window.VyzionI18n.applyCachedLocaleIfAvailable();
     }
+    window.VyzionI18n?.updateLanguageSwitcherUI?.();
   }
 
   if (document.readyState === 'loading') {
@@ -211,4 +237,9 @@
   } else {
     bootSiteUI();
   }
+
+  window.VyzionSiteUI = {
+    applySiteContactLinks,
+    applyCalendlyUrl
+  };
 })();

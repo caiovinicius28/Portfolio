@@ -505,41 +505,6 @@ body {
 }
 
 @media (max-width: 780px) {
-  .site-header {
-    padding: 14px 18px;
-  }
-
-  .header-pill {
-    padding: 10px 14px;
-    border-radius: 18px;
-  }
-
-  .menu-toggle {
-    display: block;
-  }
-
-  .nav-menu {
-    position: fixed;
-    top: 78px;
-    left: 18px;
-    right: 18px;
-    display: none;
-    flex-direction: column;
-    padding: 18px;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 18px;
-    background: rgba(8, 8, 10, 0.96);
-    backdrop-filter: blur(18px);
-  }
-
-  .nav-menu.open {
-    display: flex;
-  }
-
-  .header-cta span:first-child {
-    display: none;
-  }
-
   .hero {
     padding: 108px 18px 60px;
   }
@@ -584,9 +549,6 @@ body {
     font-size: 13px;
   }
 
-  .language-switcher {
-    display: none;
-  }
 }
 
 @media (prefers-reduced-motion: reduce) {

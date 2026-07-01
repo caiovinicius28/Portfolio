@@ -26,14 +26,6 @@
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
-  <url><loc>https://vyzionsystems.com/blog-article.html?id=1</loc><lastmod>2026-03-01</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
-  <url><loc>https://vyzionsystems.com/blog-article.html?id=2</loc><lastmod>2026-02-08</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
-  <url><loc>https://vyzionsystems.com/blog-article.html?id=3</loc><lastmod>2026-01-21</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
-  <url><loc>https://vyzionsystems.com/blog-article.html?id=4</loc><lastmod>2025-12-10</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
-  <url><loc>https://vyzionsystems.com/blog-article.html?id=5</loc><lastmod>2025-11-18</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
-  <url><loc>https://vyzionsystems.com/blog-article.html?id=6</loc><lastmod>2025-10-22</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
-  <url><loc>https://vyzionsystems.com/blog-article.html?id=7</loc><lastmod>2025-09-14</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
-  <url><loc>https://vyzionsystems.com/blog-article.html?id=8</loc><lastmod>2025-08-05</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
   <url>
     <loc>https://vyzionsystems.com/faq.html</loc>
     <lastmod>2026-03-01</lastmod>
@@ -43,4 +35,61 @@
   <url><loc>https://vyzionsystems.com/privacy.html</loc><lastmod>2026-06-29</lastmod><changefreq>yearly</changefreq><priority>0.3</priority></url>
   <url><loc>https://vyzionsystems.com/terms.html</loc><lastmod>2026-06-29</lastmod><changefreq>yearly</changefreq><priority>0.3</priority></url>
   <url><loc>https://vyzionsystems.com/cookies.html</loc><lastmod>2026-06-29</lastmod><changefreq>yearly</changefreq><priority>0.3</priority></url>
+
+  <url>
+    <loc>https://vyzionsystems.com/blog/site-speed-seo.html</loc>
+    <lastmod>2026-03-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image><image:loc>https://vyzionsystems.com/public%20/images/portfolio/saas-platform.png</image:loc><image:title>Why site speed matters for SEO and sales</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://vyzionsystems.com/blog/website-leads-trust.html</loc>
+    <lastmod>2026-02-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image><image:loc>https://vyzionsystems.com/public%20/images/portfolio/voxly.png</image:loc><image:title>How a professional website generates more leads and trust</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://vyzionsystems.com/blog/digital-stack-2026.html</loc>
+    <lastmod>2026-01-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image><image:loc>https://vyzionsystems.com/public%20/images/portfolio/brand-growth.png</image:loc><image:title>What to prioritize in your digital stack in 2026</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://vyzionsystems.com/blog/how-vyzion-delivers.html</loc>
+    <lastmod>2025-12-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image><image:loc>https://vyzionsystems.com/public%20/images/brand/site.png</image:loc><image:title>How Vyzion delivers projects: from brief to launch</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://vyzionsystems.com/blog/landing-pages-convert.html</loc>
+    <lastmod>2025-11-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image><image:loc>https://vyzionsystems.com/public%20/images/crm/login_crm.png</image:loc><image:title>Landing pages that convert: what actually works</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://vyzionsystems.com/blog/custom-saas-vs-off-the-shelf.html</loc>
+    <lastmod>2025-10-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image><image:loc>https://vyzionsystems.com/public%20/images/brand/banner2.png</image:loc><image:title>Custom SaaS vs off-the-shelf: when to build your own</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://vyzionsystems.com/blog/ui-mistakes-conversions.html</loc>
+    <lastmod>2025-09-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image><image:loc>https://vyzionsystems.com/public%20/images/brand/vyzion_1.jpg</image:loc><image:title>7 UI mistakes that kill conversions (and how to fix them)</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://vyzionsystems.com/blog/aeo-ai-search.html</loc>
+    <lastmod>2025-08-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image><image:loc>https://vyzionsystems.com/public%20/images/brand/banner1.jpeg</image:loc><image:title>AEO &amp; AI search: preparing your site for what's next</image:title></image:image>
+  </url>
 </urlset>

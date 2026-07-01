@@ -3,6 +3,7 @@
   const baseTranslations = window.VYZION_TRANSLATIONS || { en: {}, pt: {} };
   const CACHE_PREFIX = 'vyzion-locale-dict-';
   const LOCALE_KEY = 'vyzion-detected-locale';
+  const MANUAL_LOCALE_KEY = 'vyzion-locale-manual';
   const COUNTRY_KEY = 'vyzion-detected-country';
   const CACHE_VERSION = '20';
 
@@ -68,7 +69,32 @@
     return null;
   }
 
+  function hasManualEnglishPreference() {
+    return localStorage.getItem(MANUAL_LOCALE_KEY) === 'en';
+  }
+
+  function getCurrentLocale() {
+    return document.documentElement.dataset.locale
+      || localStorage.getItem(LOCALE_KEY)
+      || 'en';
+  }
+
+  function updateLanguageSwitcherUI() {
+    const locale = getCurrentLocale();
+    document.querySelectorAll('.lang-btn[data-locale]').forEach(btn => {
+      const isActive = btn.dataset.locale === locale;
+      btn.classList.toggle('is-active', isActive);
+      btn.setAttribute('aria-pressed', String(isActive));
+    });
+  }
+
   async function resolveUserLocale() {
+    if (hasManualEnglishPreference()) {
+      sessionStorage.setItem(LOCALE_KEY, 'en');
+      localStorage.setItem(LOCALE_KEY, 'en');
+      return 'en';
+    }
+
     const country = await detectCountryCode();
     const fromBrowser = localeFromBrowser();
 
@@ -85,7 +111,7 @@
     }
 
     const fromCountry = localeFromCountry(country);
-    const locale = fromCountry || fromBrowser || 'en';
+    const locale = normalizeLocale(fromCountry || fromBrowser || 'en');
     sessionStorage.setItem(LOCALE_KEY, locale);
     localStorage.setItem(LOCALE_KEY, locale);
     return locale;
@@ -183,7 +209,9 @@
 
     document.title = page === 'about' && dictionary['about.pageTitle']
       ? dictionary['about.pageTitle']
-      : dictionary['meta.title'] || document.title;
+      : page === 'blog-article' && document.body.dataset.articleId
+        ? document.title
+        : dictionary['meta.title'] || document.title;
 
     if (metaDescription) {
       metaDescription.setAttribute('content', page === 'about' && dictionary['about.pageDescription']
@@ -215,10 +243,13 @@
     document.documentElement.classList.remove('i18n-loading');
     document.documentElement.classList.add('i18n-ready');
     document.documentElement.dataset.locale = locale;
+    updateLanguageSwitcherUI();
   }
 
   function applyCachedLocaleIfAvailable() {
-    const locale = localStorage.getItem(LOCALE_KEY);
+    const locale = hasManualEnglishPreference()
+      ? 'en'
+      : localStorage.getItem(LOCALE_KEY);
     if (!locale) return false;
 
     if (baseTranslations[locale]) {
@@ -242,11 +273,27 @@
     return locale;
   }
 
+  async function setLocale(locale) {
+    const target = normalizeLocale(locale);
+    if (target !== 'en') return target;
+
+    localStorage.setItem(MANUAL_LOCALE_KEY, 'en');
+    localStorage.setItem(LOCALE_KEY, 'en');
+    sessionStorage.setItem(LOCALE_KEY, 'en');
+
+    const dictionary = await getDictionary('en');
+    applyRegionalTranslation('en', dictionary);
+    return 'en';
+  }
+
   window.VyzionI18n = {
     initRegionalI18n,
     applyRegionalTranslation,
     applyCachedLocaleIfAvailable,
     resolveUserLocale,
-    getDictionary
+    getDictionary,
+    setLocale,
+    getCurrentLocale,
+    updateLanguageSwitcherUI
   };
 })();

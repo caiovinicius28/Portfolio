@@ -208,7 +208,7 @@
 
 /* Home page shared sections */
 .home-founders {
-  padding: 20px 3.8% 90px;
+  padding: 20px 3.8% 48px;
 }
 
 .founders-more {
@@ -802,9 +802,14 @@
   }
 }
 
-@media (max-width: 780px) {
+@media (max-width: 560px) {
   .founders {
-    padding-left: 22px;
-    padding-right: 22px;
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+
+  .founder-card {
+    min-height: 360px;
+    height: min(92vw, 420px);
   }
 }

@@ -5,13 +5,13 @@
       <h2>VYZION</h2>
     </a>
 
-    <button class="menu-toggle" type="button" data-i18n-aria="menu.toggle" aria-expanded="false">
-      <span></span><span></span><span></span>
+    <button class="menu-toggle" type="button" data-i18n-aria="menu.toggle" aria-expanded="false" aria-controls="site-nav-menu">
+      <span class="menu-toggle-bars" aria-hidden="true"></span>
     </button>
 
-    <nav class="nav-menu" data-i18n-aria="nav.main" aria-label="Main navigation">
+    <nav class="nav-menu" id="site-nav-menu" data-i18n-aria="nav.main" aria-label="Main navigation">
       <a href="about.html" data-nav="about" data-i18n="nav.about">About</a>
-      <a href="#process" data-nav="works" data-i18n="nav.works">Works</a>
+      <a href="index.html#process" data-nav="works" data-i18n="nav.works">Works</a>
       <a href="blog.html" data-nav="blog" data-i18n="nav.blog">Blog</a>
       <a href="contact.html" data-nav="contact" data-i18n="nav.contact">Contact</a>
       <a href="https://zarlabs.online" class="nav-external" target="_blank" rel="noopener noreferrer">
@@ -21,7 +21,12 @@
     </nav>
 
     <div class="header-actions">
-      <a class="header-cta" href="contact.html#book">
+      <div class="language-switcher" role="group" data-i18n-aria="lang.group" aria-label="Language">
+        <button type="button" class="lang-btn" data-locale="en" data-i18n-aria="lang.switchToEnglish" aria-pressed="false">
+          <span data-i18n="lang.english">EN</span>
+        </button>
+      </div>
+      <a class="header-cta" href="contact.html#book" data-site-calendly-book>
         <span data-i18n="header.cta">Contact Us</span>
         <span class="cta-icon" aria-hidden="true">↗</span>
       </a>

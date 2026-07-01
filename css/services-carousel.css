@@ -145,9 +145,25 @@
   }
 }
 
-@media (prefers-reduced-motion: reduce) {
-  .services-carousel-track {
-    transition: none;
+@media (max-width: 560px) {
+  .services-carousel {
+    grid-template-columns: 28px 1fr 28px;
+    gap: 0 4px;
+  }
+
+  .services-carousel-btn {
+    width: 28px;
+    height: 28px;
+    font-size: 16px;
+  }
+
+  .services-carousel .service-card {
+    min-height: 240px;
+    padding: 22px 16px 18px;
+  }
+
+  .services-carousel-dots {
+    margin-top: 20px;
   }
 }
 

@@ -20,6 +20,10 @@
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 
+.home-who-top > * {
+  min-width: 0;
+}
+
 .home-who-intro,
 .home-who-headline,
 .home-who-lead {
@@ -175,6 +179,9 @@
   font-size: 15px;
   line-height: 1.65;
   color: #a1a1aa;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  hyphens: auto;
 }
 
 .home-who-studio-label {
@@ -193,6 +200,8 @@
   justify-content: space-between;
   gap: 16px;
   width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
   padding: 14px 16px;
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 8px;
@@ -200,6 +209,7 @@
   color: #e4e4e7;
   font-size: 14px;
   font-weight: 500;
+  line-height: 1.4;
   text-decoration: none;
   transition: border-color 0.25s ease, background 0.25s ease;
 }
@@ -292,6 +302,18 @@
   color: #71717a;
 }
 
+@media (max-width: 1280px) {
+  .home-who-top {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .home-who-lead {
+    grid-column: 1 / -1;
+    border-right: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+  }
+}
+
 @media (max-width: 1100px) {
   .home-who-top {
     grid-template-columns: 1fr 1fr;
@@ -362,6 +384,37 @@
 
   .home-stat-card:last-child {
     border-bottom: none;
+  }
+}
+
+@media (max-width: 560px) {
+  .home-who {
+    padding-left: 18px;
+    padding-right: 18px;
+    padding-top: 36px;
+    padding-bottom: 48px;
+  }
+
+  .home-who-intro,
+  .home-who-headline,
+  .home-who-lead,
+  .home-stat-card {
+    padding: 20px 16px;
+  }
+
+  .home-who-headline h2 {
+    font-size: clamp(26px, 7.5vw, 34px);
+  }
+
+  .home-who-lead p {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  .home-who-studio-btn {
+    justify-content: center;
+    text-align: center;
+    padding: 16px;
   }
 }
 

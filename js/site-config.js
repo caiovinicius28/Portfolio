@@ -4,7 +4,7 @@ window.VYZION_SITE = {
   email: 'contact@vyzionsystems.com',
   phone: '+55 (62) 99480-0483',
   whatsapp: '5562994800483',
-  calendly: 'https://calendly.com/vyzion-systems/free-consultation',
+  calendly: 'https://calendly.com/contact-vyzionsystems/30min',
   ogImage: 'https://vyzionsystems.com/public%20/images/brand/site.png',
   locale: 'en_US',
   twitter: '@vyzionsystems',
@@ -15,12 +15,12 @@ window.VYZION_SITE = {
   },
   founders: {
     alizay: {
-      linkedin: 'https://www.linkedin.com/in/alizay-ayesha',
-      instagram: 'https://www.instagram.com/alizayayesha'
+      linkedin: 'https://pk.linkedin.com/in/alizay-ayeshaa',
+      instagram: 'https://www.instagram.com/alizay_ayesha/'
     },
     caio: {
       linkedin: 'https://www.linkedin.com/in/caio-vinicius-afaguette',
-      instagram: 'https://www.instagram.com/caioviniciusaf'
+      instagram: 'https://www.instagram.com/cvinicius_28/'
     }
   },
   sameAs: [

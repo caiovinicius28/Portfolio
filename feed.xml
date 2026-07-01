@@ -1,67 +1,283 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0"
+     xmlns:atom="http://www.w3.org/2005/Atom"
+     xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Vyzion Systems Blog</title>
     <link>https://vyzionsystems.com/blog.html</link>
-    <description>Digital growth guides on websites, SEO, performance and SaaS from Vyzion Systems.</description>
+    <description>Digital growth guides on websites, SEO, performance, SaaS and AEO from Vyzion Systems.</description>
     <language>en</language>
-    <lastBuildDate>Mon, 01 Mar 2026 00:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 01 Mar 2026 08:00:00 GMT</lastBuildDate>
     <atom:link href="https://vyzionsystems.com/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Why site speed matters for SEO and sales</title>
-      <link>https://vyzionsystems.com/blog-article.html?id=1</link>
-      <guid isPermaLink="true">https://vyzionsystems.com/blog-article.html?id=1</guid>
-      <pubDate>Sun, 01 Mar 2026 00:00:00 GMT</pubDate>
-      <description>Slow pages lose rankings and customers. How Vyzion optimizes performance, Core Web Vitals and mobile UX.</description>
+      <link>https://vyzionsystems.com/blog/site-speed-seo.html</link>
+      <guid isPermaLink="true">https://vyzionsystems.com/blog/site-speed-seo.html</guid>
+      <pubDate>Sun, 01 Mar 2026 08:00:00 GMT</pubDate>
+      <description>Slow pages lose rankings and customers. How Vyzion optimizes performance, Core Web Vitals and mobile UX to drive more conversions.</description>
+      <content:encoded><![CDATA[Why site speed matters for SEO and sales
+
+Slow pages lose rankings and customers. How Vyzion optimizes performance, Core Web Vitals and mobile UX to drive more conversions.
+
+Site speed is not a technical detail — it directly affects rankings and revenue. Every extra second of load time increases bounce rate and kills conversions.
+
+Why speed is a revenue lever, not a tech detail
+
+At Vyzion, we optimize Core Web Vitals, images, scripts and asset delivery so your pages load fast on mobile and desktop. Fast sites rank higher and convert better.
+
+If your site is slow, you are paying for traffic that never sees your offer. A performance audit is the first step to recover leads and Google positions.
+
+What we optimize on every Vyzion build
+
+Core Web Vitals: LCP under 2.5s, stable layout, fast interaction
+
+Image and video delivery: modern formats, lazy loading, CDN-ready assets
+
+Script diet: only what converts — analytics, chat and tags loaded intelligently
+
+Every second of delay can reduce conversions by up to 7%. If your site feels sluggish, you are paying for traffic that never sees your offer.
+
+How to know if your site is costing you leads
+
+Google uses page experience as a ranking signal. Shoppers abandon slow mobile pages before your offer loads. A performance audit often reveals quick wins — oversized images, render-blocking scripts, bloated plugins — that recover rankings and revenue within weeks.
+
+At Vyzion, performance is built in from wireframe to launch. We ship semantic HTML, optimized assets and clean code so your site stays fast as you scale content and campaigns.]]></content:encoded>
     </item>
     <item>
       <title>How a professional website generates more leads and trust</title>
-      <link>https://vyzionsystems.com/blog-article.html?id=2</link>
-      <guid isPermaLink="true">https://vyzionsystems.com/blog-article.html?id=2</guid>
-      <pubDate>Sun, 08 Feb 2026 00:00:00 GMT</pubDate>
-      <description>Strategic design, clear UX and well-placed CTAs turn visitors into opportunities.</description>
+      <link>https://vyzionsystems.com/blog/website-leads-trust.html</link>
+      <guid isPermaLink="true">https://vyzionsystems.com/blog/website-leads-trust.html</guid>
+      <pubDate>Sun, 08 Feb 2026 08:00:00 GMT</pubDate>
+      <description>Strategic design, clear UX and well-placed CTAs turn visitors into opportunities — what we deliver on every Vyzion project.</description>
+      <content:encoded><![CDATA[How a professional website generates more leads and trust
+
+Strategic design, clear UX and well-placed CTAs turn visitors into opportunities — what we deliver on every Vyzion project.
+
+Visitors decide in seconds whether they trust your brand. An amateur site turns away opportunities before your product is even evaluated.
+
+Trust is decided in the first three seconds
+
+Professional websites combine clear visual hierarchy, benefit-driven copy and visible CTAs at every stage of the journey. That is what turns traffic into qualified leads.
+
+The anatomy of a site that converts
+
+Clear value proposition above the fold — no guessing what you sell
+
+Social proof: client logos, testimonials, case metrics
+
+Friction-free CTAs on desktop and mobile at every scroll depth
+
+Your website is your best salesperson. If it doesn't look and perform like a market leader, you're leaving deals on the table.
+
+What professional delivery looks like
+
+At Vyzion, every project prioritizes credibility and conversion — design that communicates authority and guides users to action.
+
+Amateur design signals risk. Prospects compare you to competitors in seconds. A polished site communicates reliability before a sales call happens.
+
+We pair strategic copy with UI that guides the eye: hierarchy, whitespace, motion used sparingly, and forms that respect the user's time. The result is more inquiries, not just more page views.]]></content:encoded>
     </item>
     <item>
       <title>What to prioritize in your digital stack in 2026</title>
-      <link>https://vyzionsystems.com/blog-article.html?id=3</link>
-      <guid isPermaLink="true">https://vyzionsystems.com/blog-article.html?id=3</guid>
-      <pubDate>Tue, 21 Jan 2026 00:00:00 GMT</pubDate>
-      <description>Technical SEO, marketing automation and custom software for growing businesses.</description>
+      <link>https://vyzionsystems.com/blog/digital-stack-2026.html</link>
+      <guid isPermaLink="true">https://vyzionsystems.com/blog/digital-stack-2026.html</guid>
+      <pubDate>Wed, 21 Jan 2026 08:00:00 GMT</pubDate>
+      <description>Technical SEO, marketing automation and custom software: what growing businesses need to invest in now to compete online.</description>
+      <content:encoded><![CDATA[What to prioritize in your digital stack in 2026
+
+Technical SEO, marketing automation and custom software: what growing businesses need to invest in now to compete online.
+
+In 2026, businesses that grow online invest in three pillars: high-performance websites, solid technical SEO and software that automates operations.
+
+The 2026 digital stack that actually scales
+
+Generic tools solve point problems but rarely scale with the business. Custom software and the right integrations remove bottlenecks and reduce operational costs.
+
+Prioritize what drives revenue: professional digital presence, pages that convert and systems your team actually uses.
+
+Invest where revenue compounds
+
+High-performance website or landing hub as your conversion center
+
+Technical SEO + structured data for Google and AI discovery
+
+Custom software when off-the-shelf tools block growth
+
+Growth in 2026 belongs to teams with a fast site, clear offer and systems that scale — not another plugin subscription.
+
+Avoid expensive distractions
+
+Shiny tools come and go. What matters is a foundation that captures demand, ranks consistently and automates repeat work.
+
+We help leadership teams prioritize: fix the conversion path first, then layer SEO and automation. That sequence protects budget and accelerates ROI.]]></content:encoded>
     </item>
     <item>
       <title>How Vyzion delivers projects: from brief to launch</title>
-      <link>https://vyzionsystems.com/blog-article.html?id=4</link>
-      <guid isPermaLink="true">https://vyzionsystems.com/blog-article.html?id=4</guid>
-      <pubDate>Wed, 10 Dec 2025 00:00:00 GMT</pubDate>
-      <description>Discover, design, build and launch with clear deliverables.</description>
+      <link>https://vyzionsystems.com/blog/how-vyzion-delivers.html</link>
+      <guid isPermaLink="true">https://vyzionsystems.com/blog/how-vyzion-delivers.html</guid>
+      <pubDate>Wed, 10 Dec 2025 08:00:00 GMT</pubDate>
+      <description>Our four-step process — discover, design, build and launch — with clear deliverables for websites, campaigns and digital products.</description>
+      <content:encoded><![CDATA[How Vyzion delivers projects: from brief to launch
+
+Our four-step process — discover, design, build and launch — with clear deliverables for websites, campaigns and digital products.
+
+Digital projects fail without a clear process. At Vyzion, we follow four steps: discover, design, build and launch — each with defined deliverables.
+
+A process clients can trust
+
+In discovery we align goals, audience and scope. In design we validate visual direction and UX. In build we deliver performant code. At launch we test, ship and hand off.
+
+Four phases, zero guesswork
+
+Discover — goals, audience, scope, success metrics
+
+Design — UX flows, visual direction, conversion mapping
+
+Build — performant code, integrations, QA on real devices
+
+Launch — go-live, handoff, analytics and iteration plan
+
+You should never wonder what your agency is doing. Our process is visible, structured and built for predictable delivery.
+
+Why transparency wins projects
+
+Transparency at every stage means predictable timelines, less rework and a final product ready to deliver results.
+
+Projects fail without milestones. We document every phase so stakeholders know what ships when — and what they need to provide.
+
+Whether it's a campaign landing page or a multi-module SaaS platform, the same discipline applies: align early, validate design, build to perform, launch with confidence.]]></content:encoded>
     </item>
     <item>
       <title>Landing pages that convert: what actually works</title>
-      <link>https://vyzionsystems.com/blog-article.html?id=5</link>
-      <guid isPermaLink="true">https://vyzionsystems.com/blog-article.html?id=5</guid>
-      <pubDate>Tue, 18 Nov 2025 00:00:00 GMT</pubDate>
-      <description>Hero, proof, offer and CTA — the anatomy of high-converting landing pages.</description>
+      <link>https://vyzionsystems.com/blog/landing-pages-convert.html</link>
+      <guid isPermaLink="true">https://vyzionsystems.com/blog/landing-pages-convert.html</guid>
+      <pubDate>Tue, 18 Nov 2025 08:00:00 GMT</pubDate>
+      <description>Hero, proof, offer and CTA — the anatomy of pages that turn traffic into qualified leads.</description>
+      <content:encoded><![CDATA[Landing pages that convert: what actually works
+
+Hero, proof, offer and CTA — the anatomy of pages that turn traffic into qualified leads.
+
+High-converting landing pages follow a proven structure: hero with a clear value proposition, social proof, benefits, offer and repeated CTAs.
+
+Landing pages built for campaigns
+
+Every element has a job. The hero captures attention in 3 seconds. Testimonials and logos reduce objections. Well-placed CTAs guide action without friction.
+
+Single focused offer — one page, one goal
+
+Proof near the hero — logos, ratings, short testimonials
+
+Mobile-first layout with thumb-friendly CTAs
+
+A dedicated landing page can double lead volume from the same ad spend. Message match plus speed is the multiplier.
+
+When to rebuild vs optimize
+
+At Vyzion, we build landing pages focused on campaigns and lead generation — mobile-tested, fast and ready to scale paid traffic.
+
+Paid traffic is expensive. Sending clicks to a generic homepage dilutes message match and kills conversion rate.
+
+We build campaign-specific landers aligned to ad copy, with fast load times and tracking ready for Meta, Google and LinkedIn pixels.]]></content:encoded>
     </item>
     <item>
       <title>Custom SaaS vs off-the-shelf: when to build your own</title>
-      <link>https://vyzionsystems.com/blog-article.html?id=6</link>
-      <guid isPermaLink="true">https://vyzionsystems.com/blog-article.html?id=6</guid>
-      <pubDate>Wed, 22 Oct 2025 00:00:00 GMT</pubDate>
-      <description>When custom software pays off for scaling businesses.</description>
+      <link>https://vyzionsystems.com/blog/custom-saas-vs-off-the-shelf.html</link>
+      <guid isPermaLink="true">https://vyzionsystems.com/blog/custom-saas-vs-off-the-shelf.html</guid>
+      <pubDate>Wed, 22 Oct 2025 08:00:00 GMT</pubDate>
+      <description>Scaling businesses outgrow generic tools. Here's when custom software pays off.</description>
+      <content:encoded><![CDATA[Custom SaaS vs off-the-shelf: when to build your own
+
+Scaling businesses outgrow generic tools. Here's when custom software pays off.
+
+Off-the-shelf tools work at the start, but growing businesses often hit a ceiling: limited integrations, rigid workflows and costs that scale with users.
+
+When generic SaaS stops scaling
+
+Custom software makes sense when your processes are unique, when you need specific integrations or when the ready-made tool costs more than building.
+
+Signals you need custom software
+
+Spreadsheet workflows and manual handoffs eating team hours
+
+Billing per seat outpaces value as you grow
+
+Missing integrations with your CRM, payments or ops stack
+
+If you're duct-taping five tools together, you may already be paying more than building the right platform once.
+
+How Vyzion de-risks custom builds
+
+Vyzion designs and develops custom SaaS and apps aligned to your business model — scalable, secure and ready to evolve.
+
+Custom doesn't mean endless scope. We scope MVPs around the workflow that unlocks the most margin — then iterate with real user feedback.
+
+From internal dashboards to customer-facing SaaS, we engineer for security, scalability and a UX your team actually enjoys using.]]></content:encoded>
     </item>
     <item>
       <title>7 UI mistakes that kill conversions (and how to fix them)</title>
-      <link>https://vyzionsystems.com/blog-article.html?id=7</link>
-      <guid isPermaLink="true">https://vyzionsystems.com/blog-article.html?id=7</guid>
-      <pubDate>Sun, 14 Sep 2025 00:00:00 GMT</pubDate>
+      <link>https://vyzionsystems.com/blog/ui-mistakes-conversions.html</link>
+      <guid isPermaLink="true">https://vyzionsystems.com/blog/ui-mistakes-conversions.html</guid>
+      <pubDate>Sun, 14 Sep 2025 08:00:00 GMT</pubDate>
       <description>Slow loads, weak hierarchy and buried CTAs cost you sales every day.</description>
+      <content:encoded><![CDATA[7 UI mistakes that kill conversions (and how to fix them)
+
+Slow loads, weak hierarchy and buried CTAs cost you sales every day.
+
+UI mistakes cost sales every day: slow loads, confusing hierarchy, hidden CTAs and forms that are too long.
+
+UX mistakes that silently drain revenue
+
+Fix visual hierarchy so the eye goes straight to value and action. Reduce form fields to essentials. Make sure primary buttons stand out on mobile.
+
+Weak visual hierarchy — users can't find the primary action
+
+Forms with too many fields or unclear error states
+
+Slow interactions and layout shift on mobile
+
+Small UX fixes often outperform big rebrands. Clarity converts.
+
+Our UI/UX audit approach
+
+Small UX improvements often drive big conversion gains. At Vyzion, we audit and redesign interfaces with measurable results in mind.
+
+Most conversion lifts don't require a full rebrand. They require clarity: what you offer, why it matters, what to do next.
+
+We run structured UX reviews — heatmap patterns, funnel drop-offs, accessibility checks — then redesign with measurable targets.]]></content:encoded>
     </item>
     <item>
       <title>AEO &amp; AI search: preparing your site for what's next</title>
-      <link>https://vyzionsystems.com/blog-article.html?id=8</link>
-      <guid isPermaLink="true">https://vyzionsystems.com/blog-article.html?id=8</guid>
-      <pubDate>Tue, 05 Aug 2025 00:00:00 GMT</pubDate>
-      <description>Structured data, clear answers and fast pages for Google and AI engines.</description>
+      <link>https://vyzionsystems.com/blog/aeo-ai-search.html</link>
+      <guid isPermaLink="true">https://vyzionsystems.com/blog/aeo-ai-search.html</guid>
+      <pubDate>Tue, 05 Aug 2025 08:00:00 GMT</pubDate>
+      <description>Structured data, clear answers and fast pages — how to rank in Google and AI results.</description>
+      <content:encoded><![CDATA[AEO & AI search: preparing your site for what's next
+
+Structured data, clear answers and fast pages — how to rank in Google and AI results.
+
+AEO (Answer Engine Optimization) prepares your site for AI search — ChatGPT, Perplexity, Google AI Overviews. Clear, structured answers increase your chances of being cited.
+
+Search is changing — your site must keep up
+
+Structured data, well-written FAQs, semantic content and fast pages are the foundation for both classic SEO and visibility in AI engines.
+
+AEO basics every business needs
+
+FAQ and HowTo schema where answers match real buyer questions
+
+Clear, quotable paragraphs AI systems can cite
+
+Fast, crawlable pages with clean semantic structure
+
+Brands visible in AI answers today are building authority now. Waiting means playing catch-up.
+
+Future-proof visibility
+
+At Vyzion, we build sites designed to rank today and tomorrow — optimized for Google, rich snippets and discovery by AI assistants.
+
+Classic SEO still matters — keywords, links, technical health. AEO adds a layer: being the source AI assistants reference.
+
+We ship sites with structured data, llms.txt, sitemaps and content architecture built for both Google and AI discovery.]]></content:encoded>
     </item>
   </channel>
 </rss>

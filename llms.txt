@@ -29,20 +29,21 @@
 - Company: Vyzion Systems
 - Email: contact@vyzionsystems.com
 - Phone / WhatsApp: +55 (62) 99480-0483
-- Free consultation: https://vyzionsystems.com/contact.html#book
+- Free consultation: https://calendly.com/contact-vyzionsystems/30min
 - Typical timelines: landing pages 2–4 weeks; full websites and SaaS 6–16+ weeks
 - Clients: 30+ brands served
 - Languages: English, Portuguese (Brazil)
 
 ## Blog articles (guides)
-- Site speed, SEO and sales: https://vyzionsystems.com/blog-article.html?id=1
-- Professional websites and lead generation: https://vyzionsystems.com/blog-article.html?id=2
-- Digital stack priorities 2026: https://vyzionsystems.com/blog-article.html?id=3
-- Project delivery process: https://vyzionsystems.com/blog-article.html?id=4
-- Landing pages that convert: https://vyzionsystems.com/blog-article.html?id=5
-- Custom SaaS vs off-the-shelf: https://vyzionsystems.com/blog-article.html?id=6
-- UI mistakes that kill conversions: https://vyzionsystems.com/blog-article.html?id=7
-- AEO and AI search optimization: https://vyzionsystems.com/blog-article.html?id=8
+- Why site speed matters for SEO and sales (SEO) — Slow pages lose rankings and customers. How Vyzion optimizes performance, Core Web Vitals and mobile UX to drive more conversions. Keywords: site speed SEO, Core Web Vitals, page speed conversion, website performance, technical SEO. URL: https://vyzionsystems.com/blog/site-speed-seo.html
+- How a professional website generates more leads and trust (Web) — Strategic design, clear UX and well-placed CTAs turn visitors into opportunities — what we deliver on every Vyzion project. Keywords: professional website, lead generation, website trust, conversion UX, business website design. URL: https://vyzionsystems.com/blog/website-leads-trust.html
+- What to prioritize in your digital stack in 2026 (Strategy) — Technical SEO, marketing automation and custom software: what growing businesses need to invest in now to compete online. Keywords: digital stack 2026, marketing automation, custom software, technical SEO strategy, SaaS investment. URL: https://vyzionsystems.com/blog/digital-stack-2026.html
+- How Vyzion delivers projects: from brief to launch (Process) — Our four-step process — discover, design, build and launch — with clear deliverables for websites, campaigns and digital products. Keywords: web project process, agency delivery, website launch, SaaS development process, Vyzion Systems. URL: https://vyzionsystems.com/blog/how-vyzion-delivers.html
+- Landing pages that convert: what actually works (Conversion) — Hero, proof, offer and CTA — the anatomy of pages that turn traffic into qualified leads. Keywords: landing page conversion, high converting landing page, lead generation page, campaign landing page, CRO. URL: https://vyzionsystems.com/blog/landing-pages-convert.html
+- Custom SaaS vs off-the-shelf: when to build your own (SaaS) — Scaling businesses outgrow generic tools. Here's when custom software pays off. Keywords: custom SaaS, off the shelf software, SaaS development, custom software ROI, scalable software. URL: https://vyzionsystems.com/blog/custom-saas-vs-off-the-shelf.html
+- 7 UI mistakes that kill conversions (and how to fix them) (UI/UX) — Slow loads, weak hierarchy and buried CTAs cost you sales every day. Keywords: UI UX conversion, UX mistakes, website conversion rate, UI audit, mobile UX. URL: https://vyzionsystems.com/blog/ui-mistakes-conversions.html
+- AEO & AI search: preparing your site for what's next (SEO) — Structured data, clear answers and fast pages — how to rank in Google and AI results. Keywords: AEO, AI search optimization, Answer Engine Optimization, structured data SEO, Google AI Overviews. URL: https://vyzionsystems.com/blog/aeo-ai-search.html
+
 
 ## FAQ summary
 - Free 1-on-1 consultation available, no obligation

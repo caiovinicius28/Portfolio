@@ -228,6 +228,13 @@ footer.footer:not(.site-footer) {
   color: #a1a1aa;
 }
 
+.page-hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 24px;
+}
+
 .page-section {
   padding: 0 3.8% 80px;
   max-width: 1180px;
@@ -716,9 +723,14 @@ footer.footer:not(.site-footer) {
   background: rgba(0, 183, 255, 0.04);
 }
 
-.trust-strip span {
+.trust-strip span,
+.trust-strip a {
   font-size: 13px;
   color: #d4d4d8;
+}
+
+.trust-strip a:hover {
+  color: var(--blue, #00b7ff);
 }
 
 @media (max-width: 1000px) {

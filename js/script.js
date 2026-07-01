@@ -7,7 +7,12 @@ const observer = new IntersectionObserver((entries) => {
   });
 }, { threshold: 0.15 });
 
-document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+function initReveal() {
+  document.querySelectorAll('.reveal:not(.show)').forEach(el => observer.observe(el));
+}
+
+initReveal();
+window.VyzionReveal = initReveal;
 
 document.querySelectorAll('.bento-media video, .about-bento-video video').forEach(video => {
   video.muted = true;
@@ -311,7 +316,7 @@ function bootAboutWhyScrollReveal() {
 }
 
 const newsletterForm = document.getElementById('newsletter-form');
-if (newsletterForm) {
+if (newsletterForm && !newsletterForm.dataset.bound) {
   const emailInput = newsletterForm.querySelector('#newsletter-email');
   const fieldWrap = newsletterForm.querySelector('.home-newsletter-field');
 
@@ -334,6 +339,7 @@ if (newsletterForm) {
 
     newsletterForm.classList.add('is-success');
   });
+  newsletterForm.dataset.bound = 'true';
 }
 
 if (window.VyzionI18n) {

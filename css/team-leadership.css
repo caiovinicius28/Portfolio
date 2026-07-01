@@ -1,0 +1,240 @@
+/* Leadership & team — role cards after founders */
+.team-leadership {
+  padding: 0 3.8% 100px;
+  position: relative;
+}
+
+.team-leadership::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 50% 0%, rgba(0, 183, 255, 0.07), transparent 42%);
+  pointer-events: none;
+}
+
+.team-leadership-shell {
+  position: relative;
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 48px 0 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.team-leadership-header {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(260px, 380px);
+  gap: 40px;
+  align-items: end;
+  margin-bottom: 40px;
+}
+
+.team-leadership-heading h2 {
+  font-size: clamp(30px, 3.5vw, 48px);
+  line-height: 1.08;
+  letter-spacing: -0.03em;
+  text-transform: none;
+  margin: 0;
+}
+
+.team-leadership-intro {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.65;
+  color: #a1a1aa;
+}
+
+.team-leadership-block {
+  margin-bottom: 36px;
+}
+
+.team-leadership-block:last-child {
+  margin-bottom: 0;
+}
+
+.team-leadership-block-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 20px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.team-leadership-block-head h3 {
+  margin: 0;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--blue, #00b7ff);
+}
+
+.team-leadership-block-head span {
+  font-size: 12px;
+  color: #71717a;
+}
+
+.team-leadership-grid {
+  display: grid;
+  gap: 16px;
+}
+
+.team-leadership-grid--engineering {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.team-role-card {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 22px 20px 24px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  background:
+    linear-gradient(145deg, rgba(255, 255, 255, 0.03), transparent),
+    rgba(8, 12, 18, 0.55);
+  transition: border-color 0.25s, transform 0.25s, box-shadow 0.25s;
+}
+
+.team-role-card:hover {
+  border-color: rgba(0, 183, 255, 0.35);
+  transform: translateY(-3px);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.28);
+}
+
+.team-role-avatar {
+  display: grid;
+  place-items: center;
+  width: 52px;
+  height: 52px;
+  border-radius: 14px;
+  font-size: 13px;
+  font-weight: 900;
+  letter-spacing: 0.06em;
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.team-role-card--frontend .team-role-avatar {
+  background: linear-gradient(135deg, rgba(0, 183, 255, 0.35), rgba(0, 100, 180, 0.2));
+}
+
+.team-role-card--backend .team-role-avatar {
+  background: linear-gradient(135deg, rgba(99, 102, 241, 0.4), rgba(55, 48, 163, 0.25));
+}
+
+.team-role-card--devops .team-role-avatar {
+  background: linear-gradient(135deg, rgba(16, 185, 129, 0.35), rgba(5, 120, 90, 0.22));
+}
+
+.team-role-card h4 {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.25;
+  font-weight: 800;
+  text-transform: none;
+  letter-spacing: -0.02em;
+  color: #fff;
+}
+
+.team-role-label {
+  margin: 0;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--blue, #00b7ff);
+}
+
+.team-role-card p:last-child {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.6;
+  color: #9ca3af;
+}
+
+.team-leadership-note {
+  margin: 28px 0 0;
+  padding: 18px 22px;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 12px;
+  background: rgba(0, 183, 255, 0.04);
+  font-size: 13px;
+  line-height: 1.65;
+  color: #a1a1aa;
+  text-align: center;
+}
+
+.team-leadership-cta {
+  margin-top: 28px;
+  padding: 28px 24px;
+  border: 1px solid rgba(0, 183, 255, 0.22);
+  border-radius: 14px;
+  background:
+    linear-gradient(135deg, rgba(0, 183, 255, 0.1), rgba(0, 183, 255, 0.02)),
+    rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.team-leadership-cta h3 {
+  margin: 0 0 10px;
+  font-size: clamp(22px, 3vw, 28px);
+  line-height: 1.2;
+  font-weight: 800;
+  text-transform: none;
+  color: #fff;
+}
+
+.team-leadership-cta p {
+  margin: 0 0 20px;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #a1a1aa;
+}
+
+.team-leadership-cta-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+}
+
+@media (max-width: 520px) {
+  .team-leadership-cta-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .team-leadership-cta-actions .btn {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .team-leadership-header {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .team-leadership-grid--engineering {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 520px) {
+  .team-leadership {
+    padding-left: 22px;
+    padding-right: 22px;
+  }
+
+  .team-leadership-shell {
+    padding-top: 36px;
+  }
+
+  .team-leadership-grid--engineering {
+    grid-template-columns: 1fr;
+  }
+}

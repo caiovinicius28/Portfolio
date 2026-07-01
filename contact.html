@@ -35,6 +35,7 @@
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="css/header.css" />
   <link rel="stylesheet" href="css/site-ext.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
   <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
 </head>
 <body data-page="contact">
@@ -60,6 +61,10 @@
       <p class="eyebrow" data-i18n="contact.eyebrow">Contact</p>
       <h1 data-i18n="contact.pageTitle">Let's build something that converts</h1>
       <p class="page-hero-lead" data-i18n="contact.pageLead">Book a free 1-on-1 consultation — we'll recommend what's best for your goals. Or send your project details and we'll respond within one business day.</p>
+      <p class="page-hero-actions">
+        <a class="btn btn-primary" href="https://calendly.com/contact-vyzionsystems/30min" data-site-calendly data-i18n="blog.barConsult">Free consultation</a>
+        <a class="btn btn-outline" href="mailto:contact@vyzionsystems.com" data-site-email>contact@vyzionsystems.com</a>
+      </p>
     </div>
 
     <section class="page-section reveal delay-1" id="project-form">
@@ -150,7 +155,7 @@
 
         <div class="contact-aside-stack">
           <div class="glass-card">
-            <div class="contact-detail-row"><span data-i18n="contact.detail.email">Email</span><a href="mailto:contact@vyzionsystems.com">contact@vyzionsystems.com</a></div>
+            <div class="contact-detail-row"><span data-i18n="contact.detail.email">Email</span><a href="mailto:contact@vyzionsystems.com" data-site-email>contact@vyzionsystems.com</a></div>
             <div class="contact-detail-row"><span data-i18n="contact.detail.phone">Phone</span><a href="tel:+5562994800483">+55 (62) 99480-0483</a></div>
             <div class="contact-detail-row"><span data-i18n="contact.detail.hours">Response time</span><strong data-i18n="contact.detail.hoursVal">Within 1 business day</strong></div>
             <div class="contact-detail-row" style="border:none;padding-bottom:0"><span data-i18n="contact.detail.location">Based in</span><strong data-i18n="contact.detail.locationVal">Brazil · Remote worldwide</strong></div>
@@ -159,15 +164,14 @@
           <div class="glass-card calendly-wrap" id="book">
             <h3 data-i18n="contact.calendlyTitle">Book a free 1-on-1 consultation</h3>
             <p data-i18n="contact.calendlyLead">Pick a time that works for you. We'll discuss your goals and recommend the best path forward — no obligation.</p>
-            <!-- Replace calendly URL in js/site-config.js with your real Calendly link -->
-            <div class="calendly-inline-widget" data-url="https://calendly.com/vyzion-systems/free-consultation"></div>
-            <p class="calendly-fallback"><span data-i18n="contact.calendlyFallback">Widget not loading?</span> <a href="https://calendly.com/vyzion-systems/free-consultation" target="_blank" rel="noopener" data-i18n="contact.calendlyLink">Open Calendly ↗</a></p>
+            <div class="calendly-inline-widget" data-url="https://calendly.com/contact-vyzionsystems/30min"></div>
+            <p class="calendly-fallback"><span data-i18n="contact.calendlyFallback">Widget not loading?</span> <a href="https://calendly.com/contact-vyzionsystems/30min" target="_blank" rel="noopener" data-site-calendly data-i18n="contact.calendlyLink">Open Calendly ↗</a></p>
           </div>
         </div>
       </div>
 
       <div class="trust-strip">
-        <span data-i18n="contact.trust1">✓ Free consultation</span>
+        <a href="#book" data-i18n="contact.trust1">✓ Free consultation</a>
         <span data-i18n="contact.trust2">✓ Clear scope &amp; pricing</span>
         <span data-i18n="contact.trust3">✓ 30+ brands served</span>
         <span data-i18n="contact.trust4">✓ NDA available on request</span>

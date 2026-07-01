@@ -1,0 +1,280 @@
+/* Vyzion Growth Digest — newsletter-style subscribe blocks */
+.vyzion-digest {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  background:
+    linear-gradient(180deg, rgba(0, 183, 255, 0.04), transparent 40%),
+    #050a10;
+}
+
+.vyzion-digest-shell {
+  max-width: 100%;
+}
+
+.vyzion-digest-body {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(280px, 340px);
+}
+
+.vyzion-digest-preview {
+  padding: 28px;
+  border-right: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.vyzion-digest-eyebrow {
+  margin: 0 0 18px;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #71717a;
+}
+
+.vyzion-digest-index {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 0;
+}
+
+.vyzion-digest-index li {
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.vyzion-digest-index li:first-child {
+  border-top: none;
+}
+
+.vyzion-digest-index a {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 16px;
+  padding: 16px 4px;
+  color: inherit;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+
+.vyzion-digest-index a:hover {
+  background: rgba(0, 183, 255, 0.05);
+}
+
+.vyzion-digest-index .num {
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  color: var(--blue, #00b7ff);
+  min-width: 28px;
+}
+
+.vyzion-digest-index .title {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.4;
+  color: #f4f4f5;
+}
+
+.vyzion-digest-index .tag {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #71717a;
+  white-space: nowrap;
+}
+
+.vyzion-digest-featured {
+  margin-top: 24px;
+  border-radius: 0;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.vyzion-digest-featured a {
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  gap: 0;
+  color: inherit;
+  text-decoration: none;
+}
+
+.vyzion-digest-featured img {
+  width: 100%;
+  height: 100%;
+  min-height: 120px;
+  object-fit: cover;
+}
+
+.vyzion-digest-featured-copy {
+  padding: 18px 20px;
+}
+
+.vyzion-digest-featured-label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--blue, #00b7ff);
+}
+
+.vyzion-digest-featured-copy strong {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 16px;
+  line-height: 1.3;
+  color: #fff;
+}
+
+.vyzion-digest-featured-copy span {
+  font-size: 12px;
+  line-height: 1.55;
+  color: #a1a1aa;
+}
+
+.vyzion-digest-subscribe {
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background:
+    radial-gradient(circle at 100% 0%, rgba(0, 183, 255, 0.1), transparent 50%),
+    rgba(0, 0, 0, 0.15);
+}
+
+.vyzion-digest-subscribe h3 {
+  margin: 0 0 10px;
+  font-size: clamp(20px, 2vw, 26px);
+  line-height: 1.15;
+  letter-spacing: -0.03em;
+  font-weight: 800;
+  text-transform: none;
+  color: #fff;
+}
+
+.vyzion-digest-subscribe > p {
+  margin: 0 0 20px;
+  font-size: 14px;
+  line-height: 1.65;
+  color: #a1a1aa;
+}
+
+.vyzion-digest-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.vyzion-digest-field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.vyzion-digest-field input[type="email"] {
+  width: 100%;
+  padding: 14px 16px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 0;
+  background: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  font-family: inherit;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.vyzion-digest-field input[type="email"]:focus {
+  border-color: rgba(0, 183, 255, 0.55);
+  box-shadow: 0 0 0 3px rgba(0, 183, 255, 0.12);
+}
+
+.vyzion-digest-field .btn {
+  width: 100%;
+  justify-content: center;
+  padding: 14px 20px;
+}
+
+.vyzion-digest-note {
+  margin: 0;
+  font-size: 11px;
+  line-height: 1.5;
+  color: #71717a;
+}
+
+.vyzion-digest-success {
+  display: none;
+  padding: 16px 18px;
+  border: 1px solid rgba(0, 183, 255, 0.35);
+  border-radius: 0;
+  background: rgba(0, 183, 255, 0.08);
+  font-size: 13px;
+  line-height: 1.55;
+  color: #e4e4e7;
+}
+
+.vyzion-digest-form.is-success .vyzion-digest-field,
+.vyzion-digest-form.is-success .vyzion-digest-note {
+  display: none;
+}
+
+.vyzion-digest-form.is-success .vyzion-digest-success {
+  display: block;
+}
+
+.vyzion-digest-footer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 28px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  font-size: 11px;
+  color: #71717a;
+}
+
+/* Standalone digest section (blog page) */
+.vyzion-digest--page {
+  margin: 0 clamp(22px, 3.5vw, 48px) 80px;
+  max-width: 1680px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 0;
+  overflow: hidden;
+}
+
+@media (max-width: 900px) {
+  .vyzion-digest-body {
+    grid-template-columns: 1fr;
+  }
+
+  .vyzion-digest-preview {
+    border-right: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  }
+
+  .vyzion-digest-featured a {
+    grid-template-columns: 1fr;
+  }
+
+  .vyzion-digest-featured img {
+    min-height: 180px;
+  }
+}
+
+@media (max-width: 560px) {
+  .vyzion-digest-preview,
+  .vyzion-digest-subscribe,
+  .vyzion-digest-footer {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .vyzion-digest-index .tag {
+    display: none;
+  }
+}
